@@ -1,0 +1,27 @@
+<!--
+  control/go_for.des
+-->
+
+<gofor>
+  <solutionint> 60 </solutionint>
+  <displayint> 1 </displayint>
+  <menuitem> 1 Hour </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 720 </solutionint>
+  <displayint> 1 </displayint>
+  <menuitem> 12 Hour </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 1440 </solutionint>
+  <displayint> 1 </displayint>
+  <menuitem> 1 Day </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 10080 </solutionint>
+  <displayint> 1 </displayint>
+  <menuitem> 1 Week </menuitem>
+</gofor>
