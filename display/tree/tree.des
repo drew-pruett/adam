@@ -1,0 +1,10 @@
+<!--
+  display/tree/tree.des
+-->
+
+<?path display\tree ?>
+
+<tree>
+  <?include physiology\physiology.des ?>
+  <?include clinic\clinic.des ?>
+</tree>
