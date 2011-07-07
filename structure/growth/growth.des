@@ -11,6 +11,18 @@
       <!-- In days -->
       <val> 30 </val>
     </parm>
+    
+    <var>
+      <name>weight</name>
+    </var>
+    
+    <var>
+      <name>height</name>
+    </var>
+    
+    <var>
+      <name>body_surface_area</name>
+    </var>
   </variables>
   
   <block>
