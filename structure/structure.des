@@ -1,19 +1,19 @@
 <structure>
   <name> structure </name>
-</structure>
 
-<definitions>
+  <definitions>
   
-  <block>
-    <name> parms </name>
-  </block>
+    <block>
+      <name> parms </name>
+    </block>
   
-  <block>
-    <name> dervs </name>
-  </block>
+    <block>
+      <name> dervs </name>
+    </block>
   
-  <block>
-    <name> wrapup </name>
-  </block>
+    <block>
+      <name> wrapup </name>
+    </block>
   
-</definitions>
+  </definitions>
+</structure>
