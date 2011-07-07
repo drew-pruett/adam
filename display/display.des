@@ -1,0 +1,22 @@
+<!--
+  display/display.des
+-->
+
+<?path display ?>
+
+<display>
+  <common>
+    <addarrowsnewline />
+    
+    <?include tree\tree.des ?>
+    <?include common.des ?>
+  </common>
+  
+  <?include clinic\chart.des ?>
+  <?include physiology\physiology.des ?>
+  
+  <common>
+    <displayfirst> Body Metrics </displayfirst>
+  </common>
+</display>
+  
