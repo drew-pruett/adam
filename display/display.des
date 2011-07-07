@@ -16,7 +16,7 @@
   <?include physiology\physiology.des ?>
   
   <common>
-    <displayfirst> Body Metrics </displayfirst>
+    <displayfirst>body_metrics</displayfirst>
   </common>
 </display>
   

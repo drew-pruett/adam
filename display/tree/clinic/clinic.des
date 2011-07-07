@@ -1,0 +1,17 @@
+<!--
+  display/tree/clinic/clinic.des
+-->
+
+<branch>
+  <name>clinic</name>
+  <label>Clinic</label>
+  <parent>MAINMENU</parent>
+</branch>
+
+<?path display\tree\clinic ?>
+
+<leaf>
+  <name>chart</name>
+  <label>Chart</name>
+  <parent>clinic</parent>
+</leaf>
