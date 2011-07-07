@@ -24,13 +24,15 @@
     <def>
       <!-- In in -->
       <name> height </name>
-      <val> 20 + age / 30 </val>
+      <val> 20 + ( age / 30 ) </val>
     </def>
     
     <def>
       <!-- In m^2 -->
       <name> body_surface_area </name>
-      <val> ( 240 * ( weight ^ 0.53 ) * ( height * 2.54 ) ^ 0.4 ) / 10000 </val>
+      <val> ( 240 * ( weight ^ 0.53 ) * ( ( height * 2.54 ) ^ 0.4 ) ) / 10000 </val>
     </def>
   
   </definitions>
+  
+</structure>
