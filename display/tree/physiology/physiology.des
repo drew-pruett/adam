@@ -8,6 +8,6 @@
 
 <leaf>
   <name>body_metrics</name>
-  <label>Body Metrics</name>
+  <label>Body Metrics</label>
   <parent>physiology</parent>
 </leaf>
