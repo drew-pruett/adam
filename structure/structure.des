@@ -17,6 +17,7 @@
   
     <block>
       <name> dervs </name>
+      <call>growth.dervs</call>
     </block>
   
     <block>
