@@ -9,10 +9,10 @@
     <addarrowsnewline />
     
     <?include tree\tree.des ?>
-    <?include common.des ?>
+    <!-- <?include common.des ?> -->
   </common>
   
-  <?include clinic\chart.des ?>
+  <!-- <?include clinic\chart.des ?> -->
   <?include physiology\body_metrics.des ?>
   
   <common>

@@ -6,5 +6,5 @@
 
 <tree>
   <?include physiology\physiology.des ?>
-  <?include clinic\clinic.des ?>
+  <!-- <?include clinic\clinic.des ?> -->
 </tree>
