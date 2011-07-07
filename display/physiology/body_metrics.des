@@ -1,17 +1,4 @@
 <!--
-  display/physiology/physiology.des
+  display/physiology/body_metrics.des
 -->
 
-<branch>
-  <name>physiology</name>
-  <label>Physiology</label>
-  <parent>MAINMENU</parent>
-</branch>
-
-<?path display\tree\physiology ?>
-
-<leaf>
-  <name>body_metrics</name>
-  <label>Body Metrics</name>
-  <parent>physiology</parent>
-</leaf>

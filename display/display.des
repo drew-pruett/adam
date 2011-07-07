@@ -13,7 +13,7 @@
   </common>
   
   <?include clinic\chart.des ?>
-  <?include physiology\physiology.des ?>
+  <?include physiology\body_metrics.des ?>
   
   <common>
     <displayfirst>body_metrics</displayfirst>
