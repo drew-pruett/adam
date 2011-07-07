@@ -1,0 +1,142 @@
+<!--
+  display/physiology/heart.des
+-->
+
+<panel>
+  <name>heart</name>
+  
+  <showpanelname>
+    <row>0.5</row>
+    <col>1.0</col>
+  </showpanelname>
+  
+  <groupbox>
+    <row>2.0</row>
+    <col>2.0</col>
+    <high>19.0</high>
+    <wide>95.0</wide>
+    <title>Heart</title>
+    
+    <editbox>
+      <row>1.0</row>
+      <col>1.0</col>
+      <name> heart.cardiac_index </name>
+    </editbox>
+    
+    <showgraph>
+      <row>8.5</row>
+      <col>1</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>growth.age_minutes</name>
+        <label>Age (minutes)</label>
+        <scale>
+          <min>4330</min>
+          <max>4600</max>
+        </scale>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.cardiac_output</name>
+          <label>Cardiac Output (L)</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+        <scale>
+          <min>0.6</min>
+          <max>1.5</max>
+        </scale>
+      </yaxis>
+    </showgraph>
+    
+    <showgraph>
+      <row>8.5</row>
+      <col>2</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>growth.age_minutes</name>
+        <label>Age (minutes)</label>
+        <scale>
+          <min>4330</min>
+          <max>4600</max>
+        </scale>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.stroke_volume</name>
+          <label>Stroke Volume (L)</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+        <scale>
+          <min>0.6</min>
+          <max>1.5</max>
+        </scale>
+      </yaxis>
+    </showgraph>
+
+    <showgraph>
+      <row>8.5</row>
+      <col>3</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>growth.age_minutes</name>
+        <label>Age (minutes)</label>
+        <scale>
+          <min>4330</min>
+          <max>4600</max>
+        </scale>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.mean_arterial_pressure</name>
+          <label>Mean Arterial Pressure (mmHg)</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+        <scale>
+          <min>50</min>
+          <max>120</max>
+        </scale>
+      </yaxis>
+    </showgraph>
+    
+    <showgraph>
+      <row>8.5</row>
+      <col>4</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>growth.age_minutes</name>
+        <label>Age (minutes)</label>
+        <scale>
+          <min>4330</min>
+          <max>4600</max>
+        </scale>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.right_atrial_pressure</name>
+          <label>Right Atrial Pressure (mmHg)</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+        <scale>
+          <min>0</min>
+          <max>10</max>
+        </scale>
+      </yaxis>
+    </showgraph>
+  </groupbox>
+</panel>

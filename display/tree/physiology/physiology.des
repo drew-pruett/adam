@@ -7,7 +7,13 @@
 <?path display\tree\physiology ?>
 
 <leaf>
-  <name>body_metrics</name>
-  <label>Body Metrics</label>
+  <name>growth_metrics</name>
+  <label>Growth Metrics</label>
+  <parent>physiology</parent>
+</leaf>
+
+<leaf>
+  <name>heart</name>
+  <label>Heart</label>
   <parent>physiology</parent>
 </leaf>
