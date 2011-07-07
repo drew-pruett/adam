@@ -1,3 +1,11 @@
+<!--
+  structure/structure.des
+-->
+
+<?path structure ?>
+
+<?include growth\growth.des ?>
+
 <structure>
   <name> structure </name>
 
