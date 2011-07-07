@@ -42,7 +42,7 @@
       <yaxis>
         <yvar>
           <name>heart.cardiac_output</name>
-          <label>Cardiac Output (L)</label>
+          <label>CO</label>
           <linecolor>RED</linecolor>
         </yvar>
         <scale>
@@ -71,7 +71,7 @@
       <yaxis>
         <yvar>
           <name>heart.stroke_volume</name>
-          <label>Stroke Volume (L)</label>
+          <label>SV</label>
           <linecolor>RED</linecolor>
         </yvar>
         <scale>
@@ -100,7 +100,7 @@
       <yaxis>
         <yvar>
           <name>heart.mean_arterial_pressure</name>
-          <label>Mean Arterial Pressure (mmHg)</label>
+          <label>MAP</label>
           <linecolor>RED</linecolor>
         </yvar>
         <scale>
@@ -129,7 +129,36 @@
       <yaxis>
         <yvar>
           <name>heart.right_atrial_pressure</name>
-          <label>Right Atrial Pressure (mmHg)</label>
+          <label>RAP</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+        <scale>
+          <min>0</min>
+          <max>10</max>
+        </scale>
+      </yaxis>
+    </showgraph>
+    
+    <showgraph>
+      <row>50</row>
+      <col>4</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>growth.age_minutes</name>
+        <label>Age (minutes)</label>
+        <scale>
+          <min>4330</min>
+          <max>4400</max>
+        </scale>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.total_peripheral_resistance</name>
+          <label>TPR</label>
           <linecolor>RED</linecolor>
         </yvar>
         <scale>
