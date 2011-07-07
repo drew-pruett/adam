@@ -24,21 +24,21 @@
     </editbox>
     
     <showvalue>
-      <row>1.0</row>
+      <row>2.0</row>
       <col>1.0</col>
       <name>growth.height</name>
       <label>Height</label>
     </showvalue>
     
     <showvalue>
-      <row>1.0</row>
+      <row>3.0</row>
       <col>1.0</col>
       <name>growth.weight</name>
       <label>Weight</label>
     </showvalue>
     
     <showvalue>
-      <row>1.0</row>
+      <row>4.0</row>
       <col>1.0</col>
       <name>growth.body_surface_area</name>
       <label>Body Surface Area</label>
