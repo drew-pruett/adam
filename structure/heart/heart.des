@@ -1,0 +1,86 @@
+<!--
+  structure/heart/heart.des
+-->
+
+<structure>
+  <name>heart</name>
+  
+  <variables>
+    <parm>
+      <name>cardiac_index</name>
+      <val>3</val>
+    </parm>
+    
+    <var>
+      <name>heart_rate</name>
+      <val>150</val>
+    </var>
+    
+    <var>
+      <name>mean_arterial_pressure</name>
+      <val>75</val>
+    </var>
+    
+    <var>
+      <name>right_atrial_pressure</name>
+      <val>5</val>
+    </var>
+    
+    <var>
+      <name>total_peripheral_resistance</name>
+    </var>
+    
+    <var>
+      <name>resistance_to_venous_return</name>
+    </var>
+    
+    <var>
+      <name>mean_circulatory_filling_pressure</name>
+    </var>
+    
+    <var>
+      <name>stroke_volume</name>
+    </var>
+    
+    <var>
+      <name>cardiac_output</name>
+    </var>
+
+  </variables>
+
+  <definitions>  
+    <block>
+      <name>dervs</name>
+        <def>
+          <name>cardiac_output</name>
+          <val>cardiac_index * growth.body_surface_area</val>
+        </def>
+        
+        <def>
+          <name>stroke_volume</name>
+          <val>cardiac_output / heart_rate</val>
+        </def>
+        
+        <def>
+          <name>mean_arterial_pressure</name>
+          <val>( cardiac_output * total_peripheral_resistance ) + right_atrial_pressure</val>
+        </def>
+        
+        <def>
+          <name>total_peripheral_resistance</name>
+          <val>( mean_arterial_pressure - right_atrial_pressure ) / cardiac_output</val>
+        </def>
+        
+        <def>
+          <name>resistance_to_venous_return</name>
+          <val>0.035 + total_peripheral_resistance + 0.00064</val>
+        </def>
+        
+        <def>
+          <name>mean_circulatory_filling_pressure</name>
+          <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * 0.0047</val>
+        </def>
+    </block>
+    </definitions>
+  
+</structure>

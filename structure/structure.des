@@ -5,6 +5,9 @@
 <?path structure ?>
 
 <?include growth\growth.des ?>
+<?include heart\heart.des ?>
+<?include fluids\fluids.des ?>
+<?include kidney\kidney.des ?>
 
 <structure>
   <name> structure </name>
@@ -18,6 +21,9 @@
     <block>
       <name> dervs </name>
       <call>growth.dervs</call>
+      <call>fluids.dervs</call>
+      <call>heart.dervs</call>
+      <call>kidney.dervs</call>
     </block>
   
     <block>

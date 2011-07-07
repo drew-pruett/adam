@@ -1,0 +1,62 @@
+<!--
+  structure/fluids/fluids.des
+-->
+
+<structure>
+  <name>fluids</name>
+  
+  <variables>
+    
+    <var>
+      <name>total_body_water</name>
+    </var>
+    
+    <var>
+      <name>extracellular_fluid</name>
+    </var>
+    
+    <var>
+      <name>intracellular_fluid</name>
+    </var>
+    
+    <var>
+      <name>blood_volume</name>
+    </var>
+    
+    <var>
+      <name>unstressed_blood_volume</name>
+    </var>
+
+  </variables>
+
+  <definitions>  
+    <block>
+      <name>dervs</name>
+        <def>
+          <name>total_body_water</name>
+          <val>0.75 * growth.weight</val>
+        </def>
+        
+        <def>
+          <name>extracellular_fluid</name>
+          <val>total_body_water * 0.45</val>
+        </def>
+        
+        <def>
+          <name>intracellular_fluid</name>
+          <val>total_body_water - extracellular_fluid</val>
+        </def>
+        
+        <def>
+          <name>blood_volume</name>
+          <val>0.08 * growth.weight</val>
+        </def>
+        
+        <def>
+          <name>unstressed_blood_volume</name>
+          <val>0.7 * blood_volume</val>
+        </def>
+    </block>
+    </definitions>
+  
+</structure>
