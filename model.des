@@ -1,0 +1,30 @@
+<!--
+  model.des
+  
+  Create: 07JUL2011
+  Modified: 07JUL2011
+  Author: Husband
+  Copyright: 2011
+  By: University of Mississippi Medical Center
+  Schema: DES v1.0
+-->
+
+<?xml version='1.0' ?>
+
+<model>
+  <title>
+    <basic>Neonate</basic>
+    <navigator>HumMod - Neonate</navigator>
+  </title>
+  
+  <?include structure\structure.des ?>
+  
+  <math>
+    <parms>structure.parms</parms>
+    <dervs>structure.dervs</dervs>
+    <wrapup>structure.wrapup</wrapup>
+  </math>
+  
+  <?include control\control.des ?>
+  <?include display\display.des ?>
+</model>
