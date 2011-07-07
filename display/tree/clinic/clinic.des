@@ -12,6 +12,6 @@
 
 <leaf>
   <name>chart</name>
-  <label>Chart</name>
+  <label>Chart</label>
   <parent>clinic</parent>
 </leaf>
