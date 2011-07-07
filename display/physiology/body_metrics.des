@@ -20,7 +20,7 @@
     <editbox>
       <row>1.0</row>
       <col>1.0</col>
-      <name> growth.age </name>
+      <name> growth.start_age_days </name>
     </editbox>
     
     <showvalue>
@@ -52,8 +52,8 @@
       <leftmargin>10</leftmargin>
       
       <xaxis>
-        <name>growth.body_surface_area</name>
-        <label>Body Surface Area (m^2)</label>
+        <name>growth.age_minutes</name>
+        <label>Age (minutes)</label>
         <scale>
           <min>0</min>
           <max>0.4</max>

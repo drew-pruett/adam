@@ -7,10 +7,22 @@
   
   <variables>
     <parm>
-      <name> age </name>
+      <name> start_age_days </name>
       <!-- In days -->
       <val> 30 </val>
     </parm>
+    
+    <var>
+      <name>start_age_minutes</name>
+    </var>
+
+    <var>
+      <name>age_minutes</name>
+    </var>
+    
+    <var>
+      <name>age_days</name>
+    </var>
     
     <var>
       <name>weight</name>
@@ -27,17 +39,36 @@
 
   <definitions>  
     <block>
+      <name>parms</name>
+      <def>
+        <name>start_age_minutes</name>
+        <val>start_age_days * 1440</val>
+      </def>
+    </block>
+    
+    <block>
       <name>dervs</name>
+      
+        <def>
+          <name>age_minutes</name>
+          <val>start_age_minutes + System.X</val>
+        </def>
+        
+        <def>
+          <name>age_days</name>
+          <val>age_minutes / 1440</val>
+        </def>
+        
         <def>
           <!-- In kg -->
           <name> weight </name>
-          <val> 8.31 * LOG10 ( ( age / 30 ) + 2.76 ) </val>
+          <val> 8.31 * LOG10 ( ( age_minutes / 43200 ) + 2.76 ) </val>
         </def>
     
         <def>
           <!-- In in -->
           <name> height </name>
-          <val> 20 + ( age / 30 ) </val>
+          <val> 20 + ( age_minutes / 43200 ) </val>
         </def>
     
         <def>

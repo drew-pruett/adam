@@ -16,6 +16,7 @@
   
     <block>
       <name> parms </name>
+      <call>growth.parms</call>
     </block>
   
     <block>
