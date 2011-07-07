@@ -7,21 +7,21 @@
 <?include growth\growth.des ?>
 
 <structure>
-  <name> Structure </name>
+  <name> structure </name>
 
   <definitions>
   
     <block>
-      <name> Parms </name>
+      <name> parms </name>
     </block>
   
     <block>
-      <name> Dervs </name>
+      <name> dervs </name>
       <call>growth.dervs</call>
     </block>
   
     <block>
-      <name> Wrapup </name>
+      <name> wrapup </name>
     </block>
   
   </definitions>
