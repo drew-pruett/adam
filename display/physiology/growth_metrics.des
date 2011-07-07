@@ -3,7 +3,7 @@
 -->
 
 <panel>
-  <name>body_metrics</name>
+  <name>growth_metrics</name>
   
   <showpanelname>
     <row>0.5</row>
