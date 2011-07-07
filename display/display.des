@@ -17,7 +17,7 @@
   <?include physiology\heart.des ?>
   
   <common>
-    <displayfirst>body_metrics</displayfirst>
+    <displayfirst>growth_metrics</displayfirst>
   </common>
 </display>
   
