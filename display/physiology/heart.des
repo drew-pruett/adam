@@ -17,12 +17,6 @@
     <wide>95.0</wide>
     <title>Heart</title>
     
-    <editbox>
-      <row>1.0</row>
-      <col>1.0</col>
-      <name> heart.cardiac_index </name>
-    </editbox>
-    
     <showgraph>
       <row>8.5</row>
       <col>1</col>

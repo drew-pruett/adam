@@ -6,10 +6,6 @@
   <name>heart</name>
   
   <variables>
-    <parm>
-      <name>cardiac_index</name>
-      <val>3</val>
-    </parm>
     
     <var>
       <name>heart_rate</name>
@@ -59,7 +55,7 @@
       <name>dervs</name>
         <def>
           <name>cardiac_output</name>
-          <val>cardiac_index * growth.body_surface_area</val>
+          <val>0.236 * growth.weight</val>
         </def>
         
         <def>
