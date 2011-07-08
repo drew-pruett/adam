@@ -14,12 +14,12 @@
     
     <var>
       <name>right_atrial_pressure</name>
-      <val>5</val>
+      <val>0</val>
     </var>
     
     <var>
       <name>total_peripheral_resistance</name>
-      <val>20</val>
+      <val>0.085</val>
     </var>
     
     <var>
@@ -29,7 +29,7 @@
     
     <var>
       <name>mean_circulatory_filling_pressure</name>
-      <val>12</val>
+      <val>7</val>
     </var>
     
     <var>
@@ -80,7 +80,7 @@
 
           <def>
             <name>resistance_to_venous_return</name>
-            <val>0.002 * total_peripheral_resistance + 0.00064</val>
+            <val>0.0467 * total_peripheral_resistance + 0.00405</val>
           </def>
           
           <def>
