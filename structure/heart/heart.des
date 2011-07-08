@@ -55,7 +55,7 @@
       <name>dervs</name>
         <def>
           <name>cardiac_output</name>
-          <val>0.236 * growth.weight</val>
+          <val>236 * growth.weight</val>
         </def>
         
         <def>

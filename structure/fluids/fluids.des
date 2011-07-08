@@ -49,7 +49,7 @@
         
         <def>
           <name>blood_volume</name>
-          <val>0.08 * growth.weight</val>
+          <val>80 * growth.weight</val>
         </def>
         
         <def>
