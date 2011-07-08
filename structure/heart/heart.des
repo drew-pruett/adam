@@ -24,10 +24,12 @@
     
     <var>
       <name>resistance_to_venous_return</name>
+      <val>0.00809</val>
     </var>
     
     <var>
       <name>mean_circulatory_filling_pressure</name>
+      <val>12</val>
     </var>
     
     <var>
