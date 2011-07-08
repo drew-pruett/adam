@@ -46,7 +46,7 @@
     
     <showgraph>
       <row>20</row>
-      <col>2</col>
+      <col>1</col>
       <high>9</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -67,7 +67,7 @@
 
     <showgraph>
       <row>30</row>
-      <col>3</col>
+      <col>1</col>
       <high>9</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -87,8 +87,8 @@
     </showgraph>
     
     <showgraph>
-      <row>40</row>
-      <col>4</col>
+      <row>10</row>
+      <col>53</col>
       <high>9</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -108,8 +108,8 @@
     </showgraph>
     
     <showgraph>
-      <row>50</row>
-      <col>4</col>
+      <row>20</row>
+      <col>53</col>
       <high>9</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -123,6 +123,48 @@
         <yvar>
           <name>heart.total_peripheral_resistance</name>
           <label>TPR</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+      </yaxis>
+    </showgraph>
+    
+    <showgraph>
+      <row>30</row>
+      <col>53</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>System.X</name>
+        <label>Age (minutes)</label>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.resistance_to_venous_return</name>
+          <label>RVR</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+      </yaxis>
+    </showgraph>
+    
+    <showgraph>
+      <row>40</row>
+      <col>53</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>System.X</name>
+        <label>Age (minutes)</label>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>heart.mean_circulatory_filling_pressure</name>
+          <label>MCFP</label>
           <linecolor>RED</linecolor>
         </yvar>
       </yaxis>
