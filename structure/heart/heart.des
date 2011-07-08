@@ -23,7 +23,7 @@
     
     <var>
       <name>total_peripheral_resistance</name>
-      <val>100</val>
+      <val>20</val>
     </var>
     
     <var>
@@ -47,9 +47,9 @@
   <equations>
     <impliciteq>
       <name>mean_arterial_pressure</name>
-      <startname>mean_arterial_pressure</name>
+      <startname>mean_arterial_pressure</startname>
       <initialval>75</initialval>
-      <endname>MAP_end</initialval>
+      <endname>MAP_end</endname>
       <errorlim>0.1</errorlim>
     </impliciteq>
   </equations>
