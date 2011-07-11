@@ -80,7 +80,7 @@
 
           <def>
             <name>resistance_to_venous_return</name>
-            <val>0.002755294 * total_peripheral_resistance + 0.00023898</val>
+            <val>0.035 * total_peripheral_resistance + 0.00064</val>
           </def>
           
           <def>
