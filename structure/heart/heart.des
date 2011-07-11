@@ -91,7 +91,7 @@
 
           <def>
             <name>resistance_to_venous_return</name>
-            <val>0.035 * total_peripheral_resistance + 0.00064</val>
+            <val>( mean_circulatory_filling_pressure - right_atrial_pressure ) / cardiac_output</val>
           </def>
           
           <def>

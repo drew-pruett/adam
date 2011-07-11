@@ -24,6 +24,15 @@
     <var>
       <name>blood_flow</name>
     </var>
+    
+    <var>
+      <name>perfusion_pressure</name>
+    </var>
+    
+    <var>
+      <name>perfusion_pressure_drop</name>
+      <val>0</val>
+    </var>
 
   </variables>
 
@@ -39,6 +48,11 @@
         <def>
           <name>blood_flow</name>
           <val>heart.cardiac_output * percent_blood_flow</val>
+        </def>
+        
+        <def>
+          <name>perfusion_pressure</name>
+          <val>heart.mean_arterial_pressure - perfusion_pressure_drop</val>
         </def>
     </block>
     </definitions>
