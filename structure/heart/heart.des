@@ -71,7 +71,7 @@
         
         <def>
           <name>mcfp_slope</name>
-          <val>7 / ( 24 * growth.weight )</val>
+          <val>100 / ( 3 * fluids.blood_volume )</val>
         </def>
 
         <def>
