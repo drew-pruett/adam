@@ -67,7 +67,7 @@
 
         <def>
           <name>mean_circulatory_filling_pressure</name>
-          <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * 0.0047</val>
+          <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * 0.06</val>
         </def>
 
         <implicitmath>
