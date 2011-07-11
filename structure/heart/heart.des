@@ -71,7 +71,7 @@
         
         <def>
           <name>mcfp_slope</name>
-          <val>7 / ( 199.44 * LOG10 ( ( growth.age_minutes / 43200 ) + 66.24 )</val>
+          <val>7 / ( 24 * growth.weight )</val>
         </def>
 
         <def>
