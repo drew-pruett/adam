@@ -39,6 +39,10 @@
     <var>
       <name>cardiac_output</name>
     </var>
+    
+    <var>
+      <name>mcfp_slope</name>
+    </var>
 
   </variables>
   
@@ -64,10 +68,15 @@
           <name>stroke_volume</name>
           <val>cardiac_output / heart_rate</val>
         </def>
+        
+        <def>
+          <name>mcfp_slope</name>
+          <val>7 / ( 199.44 * LOG10 ( ( growth.age_minutes / 43200 ) + 66.24 )</val>
+        </def>
 
         <def>
           <name>mean_circulatory_filling_pressure</name>
-          <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * 0.06</val>
+          <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * mcfp_slope</val>
         </def>
 
         <implicitmath>
