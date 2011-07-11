@@ -73,12 +73,14 @@
           <name>mcfp_slope</name>
           <val>100 / ( 3 * fluids.blood_volume )</val>
         </def>
-
+        
+        <!--
         <def>
           <name>mean_circulatory_filling_pressure</name>
           <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * mcfp_slope</val>
         </def>
-
+        -->
+        
         <implicitmath>
           <name>mean_arterial_pressure</name>
           
