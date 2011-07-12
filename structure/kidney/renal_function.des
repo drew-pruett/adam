@@ -12,6 +12,11 @@
       <val>1.8</val>
     </parm>
     
+    <parm>
+      <name>rpp_drop</name>
+      <val>0</val>
+    </parm>
+    
     <var>
       <name>basic_urine_output</name>
     </var>
@@ -25,7 +30,11 @@
     </var>
     
     <var>
-      <name>adjusted_map</name>
+      <name>renal_perfusion_pressure</name>
+    </var>
+    
+    <var>
+      <name>adjusted_rpp</name>
     </var>
     
     <var>
@@ -59,13 +68,18 @@
       </if>
       
       <def>
-        <name>adjusted_map</name>
-        <val>heart.mean_arterial_pressure + age_shift</val>
+        <name>renal_perfusion_pressure</name>
+        <val>heart.mean_arterial_pressure - rpp_drop</val>
+      </def>
+      
+      <def>
+        <name>adjusted_rpp</name>
+        <val>renal_perfusion_pressure + age_shift</val>
       </def>
       
       <def>
         <name>multiplier</name>
-        <val>0.000001312 * ( adjusted_map ^ 3 ) - 0.000066 * ( adjusted_map ^ 2 ) + 0.003389 * adjusted_map + 0.000377</val>
+        <val>0.000001312 * ( adjusted_rpp ^ 3 ) - 0.000066 * ( adjusted_rpp ^ 2 ) + 0.003389 * adjusted_rpp + 0.000377</val>
       </def>
       
       <def>
