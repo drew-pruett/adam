@@ -50,7 +50,7 @@
       <name>dervs</name>
       <def>
         <name>basic_urine_output</name>
-        <val>excretion_rate / 60</val>
+        <val>excretion_rate * growth.weight / 60</val>
       </def>
       
       <if>
@@ -58,13 +58,13 @@
         <true>
           <def>
             <name>age_shift</name>
-            <val>12.5 * growth.age_months - 62</val>
+            <val>-12.5 * growth.age_months + 62</val>
           </def>
         </true>
         <false>
           <def>
             <name>age_shift</name>
-            <val>-36.5</val>
+            <val>36.5</val>
           </def>
         </false>
       </if>

@@ -60,7 +60,7 @@
           <!-- 
             Multiplier is from 2.5 ounces of formula per pound of baby.
           -->
-          <val>162.65 * growth.weight</val>
+          <val>162.65 * growth.weight / 1440</val>
         </def>
         
         <def>
