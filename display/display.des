@@ -15,9 +15,11 @@
   <!-- <?include clinic\chart.des ?> -->
   <?include physiology\growth_metrics.des ?>
   <?include physiology\heart.des ?>
+  <?include physiology\fluids.des ?>
+  <?include physiology\kidney.des ?>
   
   <common>
-    <displayfirst>growth_metrics</displayfirst>
+    <displayfirst>kidney</displayfirst>
   </common>
 </display>
   
