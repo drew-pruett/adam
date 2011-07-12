@@ -86,7 +86,7 @@
       
       <def>
         <name>urine_output</name>
-        <val>basic_urine_output * multiplier</val>
+        <val>basic_urine_output * multiplier / baroreceptor_reflex.sympathetics</val>
       </def>
     </block>
   </definitions>
