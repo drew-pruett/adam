@@ -43,11 +43,21 @@
     <var>
       <name>mcfp_slope</name>
     </var>
+    
+    <var>
+      <name>heart_strength</name>
+    </var>
+    
+    <var>
+      <name>basic_heart_strength</name>
+      <val>1</val>
+    </var>
 
   </variables>
   
   <equations>
     <impliciteq>
+      <!-- Need to look at flipping this around to work on RAP instead. -->
       <name>mean_arterial_pressure</name>
       <startname>mean_arterial_pressure</startname>
       <initialval>75</initialval>
@@ -71,12 +81,17 @@
         
         <def>
           <name>mcfp_slope</name>
-          <val>7 / ( 0.3 * fluids.blood_volume )</val>
+          <val>7 / ( 0.3 * fluids.blood_volume ) * baroreceptor_reflex.sympathetics</val>
         </def>
         
         <def>
           <name>mean_circulatory_filling_pressure</name>
           <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * mcfp_slope</val>
+        </def>
+        
+        <def>
+          <name>heart_strength</name>
+          <val>basic_heart_strength * baroreceptor_reflex.sympathetics</val>
         </def>
         
         <implicitmath>
