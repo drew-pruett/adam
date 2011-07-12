@@ -38,6 +38,26 @@
       </yaxis>
     </showgraph>
 
+    <showgraph>
+      <row>20</row>
+      <col>1</col>
+      <high>9</high>
+      <wide>42</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>System.X</name>
+        <label>Age</label>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>renal_function.perfusion_pressure</name>
+          <label>RPP</label>
+          <linecolor>RED</linecolor>
+        </yvar>
+      </yaxis>
+    </showgraph>
     
   </groupbox>
 </panel>

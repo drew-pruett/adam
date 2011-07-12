@@ -31,7 +31,7 @@
     </var>
     
     <var>
-      <name>renal_perfusion_pressure</name>
+      <name>perfusion_pressure</name>
     </var>
     
     <var>
@@ -69,13 +69,13 @@
       </if>
       
       <def>
-        <name>renal_perfusion_pressure</name>
+        <name>perfusion_pressure</name>
         <val>heart.mean_arterial_pressure - rpp_drop</val>
       </def>
       
       <def>
         <name>adjusted_rpp</name>
-        <val>renal_perfusion_pressure + age_shift</val>
+        <val>perfusion_pressure + age_shift</val>
       </def>
       
       <def>
