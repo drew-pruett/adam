@@ -17,3 +17,15 @@
   <label>Heart</label>
   <parent>physiology</parent>
 </leaf>
+
+<leaf>
+  <name>fluids</name>
+  <label>Fluids</name>
+  <parent>physiology</parent>
+</leaf>
+
+<leaf>
+  <name>kidney</name>
+  <label>Kidney</name>
+  <parent>physiology</parent>
+</leaf>

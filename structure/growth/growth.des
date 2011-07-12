@@ -30,6 +30,7 @@
     
     <var>
       <name>weight</name>
+      <val>3.6</val>
     </var>
     
     <var>
@@ -44,16 +45,16 @@
   <definitions>  
     <block>
       <name>parms</name>
-      <def>
-        <name>start_age_minutes</name>
-        <val>start_age_days * 1440</val>
-      </def>
-      
       <call>fluids.fluid_adjustment</call>
     </block>
     
     <block>
       <name>dervs</name>
+      
+      <def>
+        <name>start_age_minutes</name>
+        <val>start_age_days * 1440</val>
+      </def>
       
         <def>
           <name>age_minutes</name>
