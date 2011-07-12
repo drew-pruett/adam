@@ -1,0 +1,29 @@
+<structure>
+  <name>blood_flow</name>
+  
+  <variables>
+    
+    <var>
+      <name>percent_blood_flow</name>
+      <val>0.088</val>
+    </var>
+    
+    <var>
+      <name>blood_flow</name>
+    </var>
+
+  </variables>
+
+  <definitions>  
+    <block>
+      <name>dervs</name>
+        
+        <def>
+          <name>blood_flow</name>
+          <val>heart.cardiac_output * percent_blood_flow</val>
+        </def>
+
+    </block>
+    </definitions>
+  
+</structure>

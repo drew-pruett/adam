@@ -32,6 +32,7 @@
     
     <var>
       <name>perfusion_pressure</name>
+      <val>75</val>
     </var>
     
     <var>

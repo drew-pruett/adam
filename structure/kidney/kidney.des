@@ -5,33 +5,18 @@
 <?path structure\kidney ?>
 
 <?include renal_function.des ?>
+<?include blood_flow.des ?>
 
 <structure>
   <name>kidney</name>
   
-  <variables>
-    
-    <var>
-      <name>percent_blood_flow</name>
-      <val>0.088</val>
-    </var>
-    
-    <var>
-      <name>blood_flow</name>
-    </var>
-
-  </variables>
-
-  <definitions>  
-    <block>
-      <name>dervs</name>
-        
-        <def>
-          <name>blood_flow</name>
-          <val>heart.cardiac_output * percent_blood_flow</val>
-        </def>
-
-    </block>
-    </definitions>
   
+  <definitions>
+  
+    <block>
+      <name> dervs </name>
+      <call>blood_flow.dervs</call>
+      <call>renal_function.dervs</call>
+    </block>
+  </definitions>
 </structure>
