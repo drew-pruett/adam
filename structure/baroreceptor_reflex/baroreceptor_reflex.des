@@ -1,0 +1,100 @@
+<!--
+  structure/baroreceptor_reflex/baroreceptor_reflex.des
+-->
+
+<structure>
+  <name>baroreceptor_reflex</name>
+  
+  <variables>
+    <parm>
+      <name>cdrop</name>
+      <val>0.0</val>
+    </parm>
+    
+    <var>
+      <name>cp</name>
+    </var>
+    
+    <var>
+      <name>delp</name>
+    </var>
+    
+    <parm>
+      <name>kbaro</name>
+      <val>0.0007</val>
+    </parm>
+    
+    <var>
+      <name>affna</name>
+    </var>
+    
+    <parm>
+      <name>symfxd</name>
+      <val>1.0</val>
+    </parm>
+    
+    <parm>
+      <name>sclamp</name>
+      <val>false</val>
+    </parm>
+    
+    <var>
+      <name>sym</name>
+    </var>
+
+  </variables>
+  
+  <equations>
+    <diffeq>
+      <name>cpad</name>
+      <integralname>cpad</integralname>
+      <initialval>100.0</initialval>
+      <dervname>change</dervname>
+      <errorlim>1.0</errorlim>
+    </diffeq>
+  </equations>
+
+  <definitions>
+  
+    <block>
+      <name> dervs </name>
+      
+      <def>
+        <name>cp</name>
+        <val>heart.mean_arterial_pressure - cdrop</val>
+      </def>
+      
+      <def>
+        <name>delp</name>
+        <val>cp - cpad</val>
+      </def>
+      
+      <def>
+        <name>change</name>
+        <val>kbaro * delp</val>
+      </def>
+      
+      <def>
+        <name>AFFNA</name>
+        <val>1 <!-- replace with a curve --></val>
+      </def>
+      
+      <if>
+        <test>sclamp</test>
+        <true>
+          <def>
+            <name>sym</name>
+            <val>1 <!-- replace with a curve --></val>
+          </def>
+        </true>
+        <false>
+          <def>
+            <name>sym</name>
+            <val>symfxd</val>
+          </def>
+        </false>
+      </if>
+      
+    </block>
+  </definitions>
+</structure>

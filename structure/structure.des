@@ -9,6 +9,7 @@
 <?include fluids\fluids.des ?>
 <?include kidney\kidney.des ?>
 <?include autoregulation\autoregulation.des ?>
+<?include baroreceptor_reflex\baroreceptor_reflex.des ?>
 
 <structure>
   <name> structure </name>
@@ -27,6 +28,7 @@
       <call>heart.dervs</call>
       <call>kidney.dervs</call>
       <call>autoregulation.dervs</call>
+      <call>baroreceptor_reflex.dervs
     </block>
   
     <block>
