@@ -1,0 +1,59 @@
+<!--
+  structure/autoregulation/autoregulation.des
+-->
+
+<structure>
+  <name>autoregulation</name>
+  
+  <variables>
+    <parm>
+      <name>kauto</name>
+      <val>0.00048</val>
+    </parm>
+    
+    <var>
+      <name>next_tpr</name>
+    </var>
+    
+    <var>
+      <name>total_peripheral_resistance</name>
+    </var>
+  </variables>
+  
+  <equations>
+    <diffeq>
+      <name>basic_tpr</name>
+      <integralname>basic_tpr</integralname>
+      <initialval>0.0182</initialval>
+      <dervname>change</dervname>
+      <errorlim>0.002</errorlim>
+    </diffeq>
+  </equations>
+  
+  <!-- 
+    We need a curve for autoregulation adjusted by growth.
+    It will replace the next_tpr definition.
+  -->
+  
+  <definitions>
+  
+    <block>
+      <name> dervs </name>
+      
+      <def>
+        <name>next_tpr</name>
+        <val>0.0000119 * heart.cardiac_output - 0.0473</val>
+      </def>
+      
+      <def>
+        <name>change</name>
+        <val>kauto * ( next_tpr - basic_tpr )</val>
+      </def>
+      
+      <def>
+        <name>total_peripheral_resistance</name>
+        <val>basic_tpr * 1 <!-- the 1 will get replaced with the baroreceptorreflex.sym stuff --></val>
+      </def>
+    </block>
+  </definitions>
+</structure>
