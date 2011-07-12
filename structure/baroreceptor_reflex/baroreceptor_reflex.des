@@ -11,6 +11,21 @@
       <val>0.0</val>
     </parm>
     
+    <parm>
+      <name>fixed_sympathetics</name>
+      <val>1.0</val>
+    </parm>
+    
+    <parm>
+      <name>clamp_sympathetics</name>
+      <val>FALSE</val>
+    </parm>
+    
+    <parm>
+      <name>kbaro</name>
+      <val>0.0007</val>
+    </parm>
+    
     <var>
       <name>cp</name>
     </var>
@@ -19,27 +34,12 @@
       <name>delp</name>
     </var>
     
-    <parm>
-      <name>kbaro</name>
-      <val>0.0007</val>
-    </parm>
-    
     <var>
       <name>affna</name>
     </var>
     
-    <parm>
-      <name>symfxd</name>
-      <val>1.0</val>
-    </parm>
-    
-    <parm>
-      <name>sclamp</name>
-      <val>FALSE</val>
-    </parm>
-    
     <var>
-      <name>sym</name>
+      <name>sympathetics</name>
     </var>
 
   </variables>
@@ -80,17 +80,17 @@
       </def>
       
       <if>
-        <test>sclamp</test>
+        <test>clamp_sympathetics</test>
         <true>
           <def>
-            <name>sym</name>
+            <name>sympathetics</name>
             <val>1 <!-- replace with a curve --></val>
           </def>
         </true>
         <false>
           <def>
-            <name>sym</name>
-            <val>symfxd</val>
+            <name>sympathetics</name>
+            <val>fixed_sympathetics</val>
           </def>
         </false>
       </if>

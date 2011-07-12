@@ -52,7 +52,7 @@
       
       <def>
         <name>total_peripheral_resistance</name>
-        <val>basic_tpr * 1 <!-- the 1 will get replaced with the baroreceptorreflex.sym stuff --></val>
+        <val>basic_tpr * baroreceptor_reflex.sympathetics</val>
       </def>
     </block>
   </definitions>
