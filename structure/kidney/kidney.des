@@ -1,28 +1,19 @@
 <!--
-  structure/kidney/urine_output.des
+  structure/kidney/kidney.des
 -->
+
+<?path structure\kidney ?>
+
+<?include renal_function.des ?>
 
 <structure>
   <name>kidney</name>
   
   <variables>
-    <parm>
-      <name>urine_excretion_rate</name>
-      <!-- In mL/kg/hr -->
-      <val>1.8</val>
-    </parm>
-    
-    <var>
-      <name>basic_urine_output</name>
-    </var>
     
     <var>
       <name>percent_blood_flow</name>
       <val>0.088</val>
-    </var>
-    
-    <var>
-      <name>urine_volume</name>
     </var>
     
     <var>
@@ -44,9 +35,9 @@
     <block>
       <name>dervs</name>
         <def>
-          <!-- In mL/hr -->
+          <!-- In mL/min -->
           <name>basic_urine_output</name>
-          <val>urine_excretion_rate * growth.weight</val>
+          <val>urine_excretion_rate * growth.weight / 60</val>
         </def>
         
         <def>

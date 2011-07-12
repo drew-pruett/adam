@@ -1,0 +1,77 @@
+<!--
+  structure/kidney/renal_function.des
+-->
+
+<structure>
+  <name>renal_function</name>
+  
+  <variables>
+    <parm>
+      <name>excretion_rate</name>
+      <!-- In mL/hr -->
+      <val>1.8</val>
+    </parm>
+    
+    <var>
+      <name>basic_urine_output</name>
+    </var>
+    
+    <var>
+      <name>urine_output</name>
+    </var>
+    
+    <var>
+      <name>age_shift</name>
+    </var>
+    
+    <var>
+      <name>adjusted_map</name>
+    </var>
+    
+    <var>
+      <name>multiplier</name>
+    </var>
+
+  </variables>
+
+  <definitions>  
+    <block>
+      
+      <def>
+        <name>basic_urine_output</name>
+        <val>excretion_rate / 60</val>
+      </def>
+      
+      <if>
+        <test>growth.age_months LE 3.0</test>
+        <true>
+          <def>
+            <name>age_shift</name>
+            <val>12.5 * growth.age_months - 62</val>
+          </def>
+        </true>
+        <false>
+          <def>
+            <name>age_shift</name>
+            <val>-36.5</val>
+          </def>
+        </false>
+      </if>
+      
+      <def>
+        <name>adjusted_map</name>
+        <val>heart.mean_arterial_pressure + age_shift</val>
+      </def>
+      
+      <def>
+        <name>multiplier</name>
+        <val>0.000001312 * ( adjusted_map ^ 3 ) - 0.000066 * ( adjusted_map ^ 2 ) + 0.003389 * adjusted_map + 0.000377</val>
+      </def>
+      
+      <def>
+        <name>urine_output</name>
+        <val>basic_urine_output * multiplier</val>
+      </def>
+    </definitions>
+  
+</structure>

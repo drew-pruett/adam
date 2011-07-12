@@ -60,15 +60,20 @@
         </def>
         
         <def>
+          <name>age_months</name>
+          <val>age_months / 43200</val>
+        </def>
+        
+        <def>
           <!-- In kg -->
           <name> weight </name>
-          <val> 8.31 * LOG10 ( ( age_minutes / 43200 ) + 2.76 ) </val>
+          <val> 8.31 * LOG10 ( age_months + 2.76 ) </val>
         </def>
     
         <def>
           <!-- In in -->
           <name> height </name>
-          <val> 20 + ( age_minutes / 43200 ) </val>
+          <val> 20 + age_months </val>
         </def>
     
         <def>
