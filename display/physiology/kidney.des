@@ -32,7 +32,7 @@
       <yaxis>
         <yvar>
           <name>renal_function.urine_output</name>
-          <label>ECFV</label>
+          <label>UO</label>
           <linecolor>RED</linecolor>
         </yvar>
       </yaxis>

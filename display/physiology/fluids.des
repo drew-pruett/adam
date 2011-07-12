@@ -53,7 +53,7 @@
       <yaxis>
         <yvar>
           <name>fluids.blood_volume</name>
-          <label>ECFV</label>
+          <label>BV</label>
           <linecolor>RED</linecolor>
         </yvar>
       </yaxis>
@@ -74,7 +74,7 @@
       <yaxis>
         <yvar>
           <name>fluids.intake</name>
-          <label>ECFV</label>
+          <label>Intake</label>
           <linecolor>RED</linecolor>
         </yvar>
       </yaxis>
