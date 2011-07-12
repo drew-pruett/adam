@@ -65,7 +65,7 @@
         
         <def>
           <name>intake_urine_difference</name>
-          <val>intake - kidney.urine_output</val>
+          <val>intake - renal_function.urine_output</val>
         </def>
         
         <def>

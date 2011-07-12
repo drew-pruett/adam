@@ -20,12 +20,12 @@
 
 <leaf>
   <name>fluids</name>
-  <label>Fluids</name>
+  <label>Fluids</label>
   <parent>physiology</parent>
 </leaf>
 
 <leaf>
   <name>kidney</name>
-  <label>Kidney</name>
+  <label>Kidney</label>
   <parent>physiology</parent>
 </leaf>
