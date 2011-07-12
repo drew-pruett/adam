@@ -7,7 +7,7 @@
   
   <variables>
     <parm>
-      <name> start_age_days </name>
+      <name>start_age_days</name>
       <!-- In days -->
       <val> 30 </val>
     </parm>
@@ -48,6 +48,8 @@
         <name>start_age_minutes</name>
         <val>start_age_days * 1440</val>
       </def>
+      
+      <call>fluids.fluid_adjustment</call>
     </block>
     
     <block>

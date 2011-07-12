@@ -8,6 +8,30 @@
   <variables>
     
     <var>
+      <name>intake</name>
+    </var>
+    
+    <var>
+      <name>total_body_water</name>
+    </var>
+    
+    <var>
+      <name>intracellular</name>
+    </var>
+    
+    <var>
+      <name>total_body_water_adjusted</name>
+    </var>
+    
+    <var>
+      <name>extracellular_adjusted</name>
+    </var>
+    
+    <var>
+      <name>intracellular_adjusted</name>
+    </var>
+    
+    <var>
       <name>blood_volume</name>
     </var>
     
@@ -16,10 +40,33 @@
     </var>
 
   </variables>
+  
+  <equations>
+    <diffeq>
+      <name>extracellular</name>
+      <integralname>extracellular</integralname>
+      <initialval>1600</initialval>
+      <dervname>intake_urine_difference</dervname>
+      <errorlim>15</errorlim>
+    </diffeq>
+  </equations>
 
   <definitions>  
     <block>
       <name>dervs</name>
+      
+        <def>
+          <name>intake</name>
+          <!-- 
+            Multiplier is from 2.5 ounces of formula per pound of baby.
+          -->
+          <val>162.65 * growth.weight</val>
+        </def>
+        
+        <def>
+          <name>intake_urine_difference</name>
+          <val>intake - kidney.urine_output</val>
+        </def>
         
         <def>
           <name>blood_volume</name>
@@ -31,6 +78,30 @@
           <val>0.7 * blood_volume</val>
         </def>
     </block>
-    </definitions>
+    
+    <block>
+      <name>fluid_adjustment</name>
+      <def>
+         <name>total_body_water_adjusted</name>
+         <val>750 * growth.weight</val>
+       </def>
+       
+       <def>
+         <name>extracellular_adjusted</name>
+         <val>total_body_water_adjusted * 450</val>
+       </def>
+       
+       <def>
+         <name>intracellular_adjusted</name>
+         <val>total_body_water_adjusted - extracellular_adjusted</val>
+       </def>
+       
+       <def>
+         <name>extracellular</name>
+         <val>extracellular_adjusted</val>
+       </def>
+    </block>
+    
+  </definitions>
   
 </structure>
