@@ -13,6 +13,10 @@
     </parm>
     
     <var>
+      <name>basic_urine_output</name>
+    </var>
+    
+    <var>
       <name>percent_blood_flow</name>
       <val>0.088</val>
     </var>
@@ -41,7 +45,7 @@
       <name>dervs</name>
         <def>
           <!-- In mL/hr -->
-          <name>urine_volume</name>
+          <name>basic_urine_output</name>
           <val>urine_excretion_rate * growth.weight</val>
         </def>
         
