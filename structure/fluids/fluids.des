@@ -70,7 +70,7 @@
         
         <def>
           <name>blood_volume</name>
-          <val>80 * extracellular</val>
+          <val>0.33 * extracellular</val>
         </def>
         
         <def>
