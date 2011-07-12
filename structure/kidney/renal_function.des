@@ -36,7 +36,7 @@
 
   <definitions>  
     <block>
-      
+      <name>dervs</name>
       <def>
         <name>basic_urine_output</name>
         <val>excretion_rate / 60</val>
@@ -72,6 +72,7 @@
         <name>urine_output</name>
         <val>basic_urine_output * multiplier</val>
       </def>
-    </definitions>
+    </block>
+  </definitions>
   
 </structure>

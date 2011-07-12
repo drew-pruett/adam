@@ -25,6 +25,10 @@
     </var>
     
     <var>
+      <name>age_months</name>
+    </var>
+    
+    <var>
       <name>weight</name>
     </var>
     
@@ -61,7 +65,7 @@
         
         <def>
           <name>age_months</name>
-          <val>age_months / 43200</val>
+          <val>age_minutes / 43200</val>
         </def>
         
         <def>

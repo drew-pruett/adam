@@ -34,11 +34,6 @@
   <definitions>  
     <block>
       <name>dervs</name>
-        <def>
-          <!-- In mL/min -->
-          <name>basic_urine_output</name>
-          <val>urine_excretion_rate * growth.weight / 60</val>
-        </def>
         
         <def>
           <name>blood_flow</name>

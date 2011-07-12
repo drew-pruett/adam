@@ -8,18 +8,6 @@
   <variables>
     
     <var>
-      <name>total_body_water</name>
-    </var>
-    
-    <var>
-      <name>extracellular_fluid</name>
-    </var>
-    
-    <var>
-      <name>intracellular_fluid</name>
-    </var>
-    
-    <var>
       <name>blood_volume</name>
     </var>
     
@@ -32,20 +20,6 @@
   <definitions>  
     <block>
       <name>dervs</name>
-        <def>
-          <name>total_body_water</name>
-          <val>0.75 * growth.weight</val>
-        </def>
-        
-        <def>
-          <name>extracellular_fluid</name>
-          <val>total_body_water * 0.45</val>
-        </def>
-        
-        <def>
-          <name>intracellular_fluid</name>
-          <val>total_body_water - extracellular_fluid</val>
-        </def>
         
         <def>
           <name>blood_volume</name>
