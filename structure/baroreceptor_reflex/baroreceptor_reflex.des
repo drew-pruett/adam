@@ -35,7 +35,7 @@
     
     <parm>
       <name>sclamp</name>
-      <val>false</val>
+      <val>FALSE</val>
     </parm>
     
     <var>
@@ -75,7 +75,7 @@
       </def>
       
       <def>
-        <name>AFFNA</name>
+        <name>affna</name>
         <val>1 <!-- replace with a curve --></val>
       </def>
       

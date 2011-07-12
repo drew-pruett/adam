@@ -28,7 +28,7 @@
       <call>heart.dervs</call>
       <call>kidney.dervs</call>
       <call>autoregulation.dervs</call>
-      <call>baroreceptor_reflex.dervs
+      <call>baroreceptor_reflex.dervs</call>
     </block>
   
     <block>
