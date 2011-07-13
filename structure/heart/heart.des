@@ -96,11 +96,6 @@
         
         <implicitmath>
           <name>mean_arterial_pressure</name>
-          
-          <def>
-            <name>total_peripheral_resistance</name>
-            <val>( mean_arterial_pressure - right_atrial_pressure ) / cardiac_output</val>
-          </def>
 
           <def>
             <name>resistance_to_venous_return</name>
@@ -114,7 +109,7 @@
           
           <def>
             <name>MAP_end</name>
-            <val>( cardiac_output * total_peripheral_resistance ) + right_atrial_pressure</val>
+            <val>( cardiac_output * autoregulation.total_peripheral_resistance ) + right_atrial_pressure</val>
           </def>
         </implicitmath>
     </block>

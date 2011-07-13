@@ -17,6 +17,7 @@
     
     <var>
       <name>total_peripheral_resistance</name>
+      <val>0.04</val>
     </var>
     
     <var>
@@ -50,11 +51,6 @@
     </diffeq>
   </equations>
   
-  <!-- 
-    We need a curve for autoregulation adjusted by growth.
-    It will replace the next_tpr definition.
-  -->
-  
   <definitions>
   
     <block>
@@ -62,7 +58,7 @@
       
       <def>
         <name>bv_span</name>
-        <val>( 1.4 * fluids.blood_volume ) - ( 0.8 * fluids.blood_volume )</val>
+        <val>0.6 * fluids.blood_volume</val>
       </def>
       
       <def>
