@@ -18,6 +18,26 @@
     <var>
       <name>total_peripheral_resistance</name>
     </var>
+    
+    <var>
+      <name>bv_span</name>
+    </var>
+    
+    <var>
+      <name>tpr_limit</name>
+    </var>
+    
+    <var>
+      <name>tpr_slope</name>
+    </var>
+    
+    <var>
+      <name>tpr_setpoint</name>
+    </var>
+    
+    <var>
+      <name>co_to_tpr</name>
+    </var>
   </variables>
   
   <equations>
@@ -41,8 +61,33 @@
       <name> dervs </name>
       
       <def>
+        <name>bv_span</name>
+        <val>( 1.4 * fluids.blood_volume ) - ( 0.8 * fluids.blood_volume )</val>
+      </def>
+      
+      <def>
+        <name>tpr_limit</name>
+        <val>( LOG10 ( growth.age_months ) / growth.age_months ) * 0.2 + 0.06</val>
+      </def>
+      
+      <def>
+        <name>tpr_slope</name>
+        <val>1 / ( 20 * bv_span )</val>
+      </def>
+      
+      <def>
+        <name>tpr_setpoint</name>
+        <val>fluids.blood_volume</val>
+      </def>
+      
+      <def>
+        <name>co_to_tpr</name>
+        <val>heart.cardiac_output ^ tpr_slope</val>
+      </def>
+      
+      <def>
         <name>next_tpr</name>
-        <val>0.0000119 * heart.cardiac_output - 0.0473</val>
+        <val>co_to_tpr / ( co_to_tpr + ( tpr_setpoint ^ tpr_slope ) )</val>
       </def>
       
       <def>
