@@ -73,7 +73,7 @@
       
       <yaxis>
         <yvar>
-          <name>heart.mean_arterial_pressure</name>
+          <name>renal_function.mean_arterial_pressure</name>
           <label>MAP</label>
           <linecolor>RED</linecolor>
         </yvar>

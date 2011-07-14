@@ -100,7 +100,7 @@
       
       <def>
         <name>cp</name>
-        <val>heart.mean_arterial_pressure - cdrop</val>
+        <val>renal_function.mean_arterial_pressure - cdrop</val>
       </def>
       
       <def>
