@@ -25,10 +25,10 @@
       <name> dervs </name>
       <call>growth.dervs</call>
       <call>fluids.dervs</call>
+      <call>baroreceptor_reflex.dervs</call>
       <call>heart.dervs</call>
       <call>kidney.dervs</call>
       <call>autoregulation.dervs</call>
-      <call>baroreceptor_reflex.dervs</call>
     </block>
   
     <block>

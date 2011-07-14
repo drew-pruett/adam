@@ -18,6 +18,11 @@
     </parm>
     
     <var>
+      <name>mean_arterial_pressure</name>
+      <val>30</val>
+    </var>
+    
+    <var>
       <name>basic_urine_output</name>
     </var>
     
@@ -70,8 +75,13 @@
       </if>
       
       <def>
+        <name>mean_arterial_pressure</name>
+        <val>heart.cardiac_output * autoregulation.total_peripheral_resistance + heart.right_atrial_pressure</val>
+      </def>
+      
+      <def>
         <name>perfusion_pressure</name>
-        <val>heart.mean_arterial_pressure - rpp_drop</val>
+        <val>mean_arterial_pressure - rpp_drop</val>
       </def>
       
       <def>
