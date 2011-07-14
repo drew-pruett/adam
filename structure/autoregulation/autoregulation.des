@@ -21,10 +21,6 @@
     </var>
     
     <var>
-      <name>bv_span</name>
-    </var>
-    
-    <var>
       <name>tpr_limit</name>
     </var>
     
@@ -57,18 +53,13 @@
       <name> dervs </name>
       
       <def>
-        <name>bv_span</name>
-        <val>0.6 * fluids.blood_volume</val>
-      </def>
-      
-      <def>
         <name>tpr_limit</name>
         <val>( LOG10 ( growth.age_months ) / growth.age_months ) * 0.2 + 0.06</val>
       </def>
       
       <def>
         <name>tpr_slope</name>
-        <val>1 / ( 20 * bv_span )</val>
+        <val>1 / ( 12 * fluids.blood_volume )</val>
       </def>
       
       <def>
