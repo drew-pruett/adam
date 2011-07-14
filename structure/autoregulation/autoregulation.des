@@ -74,7 +74,7 @@
       
       <def>
         <name>next_tpr</name>
-        <val>co_to_tpr / ( co_to_tpr + ( tpr_setpoint ^ tpr_slope ) )</val>
+        <val>tpr_limit * ( co_to_tpr / ( co_to_tpr + ( tpr_setpoint ^ tpr_slope ) ) )</val>
       </def>
       
       <def>
