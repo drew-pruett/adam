@@ -73,6 +73,7 @@
         <slope>0</slope>
       </point>
     </curve>
+    
     <curve>
       <name>symp_curve</name>
       <point>
@@ -88,7 +89,7 @@
       <point>
         <x>1.5</x>
         <y>0.95</y>
-        <slope>1</slope>
+        <slope>0</slope>
       </point>
     </curve>
   </functions>

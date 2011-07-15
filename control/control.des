@@ -6,8 +6,6 @@
   <?path control ?>
   <?include go_for.des ?>
   
-  <!--
     <?include settling_time.des ?>
-  -->
   
 </control>
