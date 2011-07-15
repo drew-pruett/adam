@@ -75,7 +75,7 @@
         
         <def>
           <name>unstressed_blood_volume</name>
-          <val>0.7 * blood_volume</val>
+          <val>56 * growth.weight</val>
         </def>
     </block>
     
@@ -88,7 +88,7 @@
        
        <def>
          <name>extracellular_adjusted</name>
-         <val>total_body_water_adjusted * 450</val>
+         <val>total_body_water_adjusted * 0.45</val>
        </def>
        
        <def>
