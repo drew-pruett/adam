@@ -53,6 +53,46 @@
       <errorlim>1.0</errorlim>
     </diffeq>
   </equations>
+  
+  <functions>
+    <curve>
+      <name>affna_curve</name>
+      <point>
+        <x>-40</x>
+        <y>0</y>
+        <slope>0</slope>
+      </point>
+      <point>
+        <x>0</x>
+        <y>1</y>
+        <slope>0.05</slope>
+      </point>
+      <point>
+        <x>40</x>
+        <y>2</y>
+        <slope>0</slope>
+      </point>
+    </curve>
+    
+    <curve>
+      <name>symp_curve</name>
+      <point>
+        <x>0</x>
+        <y>2</y>
+        <slope>0</slope>
+      </point>
+      <point>
+        <x>1</x>
+        <y>1</y>
+        <slope>-0.1</slope>
+      </point>
+      <point>
+        <x>1.5</x>
+        <y>0.95</y>
+        <slope>0</slope>
+      </point>
+    </curve>
+  </functions>
 
   <definitions>
   
@@ -61,7 +101,7 @@
       
       <def>
         <name>cp</name>
-        <val>heart.mean_arterial_pressure - cdrop</val>
+        <val>renal_function.mean_arterial_pressure - cdrop</val>
       </def>
       
       <def>
@@ -76,7 +116,7 @@
       
       <def>
         <name>affna</name>
-        <val>1 <!-- replace with a curve --></val>
+        <val>affna_curve [ delp ]</val>
       </def>
       
       <if>
@@ -84,13 +124,13 @@
         <true>
           <def>
             <name>sympathetics</name>
-            <val>1 <!-- replace with a curve --></val>
+            <val>fixed_sympathetics</val>
           </def>
         </true>
         <false>
           <def>
             <name>sympathetics</name>
-            <val>fixed_sympathetics</val>
+            <val>symp_curve [ affna ]</val>
           </def>
         </false>
       </if>

@@ -58,10 +58,10 @@
   <equations>
     <impliciteq>
       <!-- Need to look at flipping this around to work on RAP instead. -->
-      <name>mean_arterial_pressure</name>
-      <startname>mean_arterial_pressure</startname>
-      <initialval>75</initialval>
-      <endname>MAP_end</endname>
+      <name>right_atrial_pressure</name>
+      <startname>right_arterial_pressure</startname>
+      <initialval>0</initialval>
+      <endname>RAP_end</endname>
       <errorlim>0.1</errorlim>
     </impliciteq>
   </equations>
@@ -95,7 +95,7 @@
         </def>
         
         <implicitmath>
-          <name>mean_arterial_pressure</name>
+          <name>right_arterial_pressure</name>
 
           <def>
             <name>resistance_to_venous_return</name>
@@ -103,14 +103,10 @@
           </def>
           
           <def>
-            <name>right_atrial_pressure</name>
+            <name>RAP_end</name>
             <val>mean_circulatory_filling_pressure - ( cardiac_output * resistance_to_venous_return )</val>
           </def>
-          
-          <def>
-            <name>MAP_end</name>
-            <val>( cardiac_output * autoregulation.total_peripheral_resistance ) + right_atrial_pressure</val>
-          </def>
+
         </implicitmath>
     </block>
     </definitions>

@@ -3,25 +3,61 @@
 -->
 
 <gofor>
+  <solutionint> 1 </solutionint>
+  <displayint> 1 </displayint>
+  <menuitem> 1 minute </menuitem>
+</gofor>
+
+<gofor>
   <solutionint> 60 </solutionint>
   <displayint> 1 </displayint>
   <menuitem> 1 Hour </menuitem>
 </gofor>
 
 <gofor>
-  <solutionint> 720 </solutionint>
-  <displayint> 60 </displayint>
-  <menuitem> 12 Hour </menuitem>
+  <solutionint>720</solutionint>
+  <displayint>1</displayint>
+  <menuitem>12 Hours</menuitem>
 </gofor>
 
 <gofor>
   <solutionint> 1440 </solutionint>
-  <displayint> 24 </displayint>
+  <displayint> 30 </displayint>
   <menuitem> 1 Day </menuitem>
 </gofor>
 
 <gofor>
   <solutionint> 10080 </solutionint>
-  <displayint> 1000 </displayint>
+  <displayint> 720 </displayint>
   <menuitem> 1 Week </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 20160 </solutionint>
+  <displayint> 1440 </displayint>
+  <menuitem> 2 Weeks </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 43200 </solutionint>
+  <displayint> 1440 </displayint>
+  <menuitem> 30 Days </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 259200 </solutionint>
+  <displayint> 1440 </displayint>
+  <menuitem> 6 Months </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 525600 </solutionint>
+  <displayint> 10080 </displayint>
+  <menuitem> 1 Year </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 784800 </solutionint>
+  <displayint> 10080 </displayint>
+  <menuitem> 1.5 Years </menuitem>
 </gofor>
