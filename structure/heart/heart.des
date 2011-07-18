@@ -99,7 +99,7 @@
 
           <def>
             <name>resistance_to_venous_return</name>
-            <val>0.4667 * autoregulation.total_peripheral_resistance - 0.000232 * growth.age_months + 0.003168</val>
+            <val>0.4667 * autoregulation.total_peripheral_resistance - ( 0.000232 * growth.age_months ) + 0.003168</val>
           </def>
           
           <def>
