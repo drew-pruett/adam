@@ -7,7 +7,7 @@
   
   <variables>
     <var>
-      <name>cardiac_output</var>
+      <name>cardiac_output</name>
     </var>
     
     <var>
@@ -41,7 +41,7 @@
       
       <def>
         <name>setpoint</name>
-        <val>2.09 * ( growth.age_months ^ 3.3 ) / ( growth.age_months ^ 3.3 48.889 ) + 2</val>
+        <val>2.09 * ( growth.age_months ^ 3.3 ) / ( growth.age_months ^ 3.3 + 48.889 ) + 2</val>
       </def>
       
       <def>

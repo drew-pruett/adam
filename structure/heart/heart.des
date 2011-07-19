@@ -73,6 +73,8 @@
   <definitions>  
     <block>
       <name>dervs</name>
+      
+        <call>cardiac_output.dervs</call>
         <def>
           <name>cardiac_output</name>
           <val>cardiac_output.cardiac_output</val>
