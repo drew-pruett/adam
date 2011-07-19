@@ -6,10 +6,7 @@
   <name>cardiac_output</name>
   
   <variables>
-    <var>
-      <name>cardiac_output</name>
-    </var>
-    
+  
     <var>
       <name>plateau_multiplier</name>
     </var>
@@ -29,7 +26,22 @@
     <var>
       <name>setpoint</name>
     </var>
+    
+    <var>
+      <name>right_atrial_pressure</name>
+    </var>
   </variables>
+  
+  <equations>
+    <impliciteq>
+      <!-- Need to look at flipping this around to work on RAP instead. -->
+      <name>cardiac_output</name>
+      <startname>cardiac_output</startname>
+      <initialval>1000</initialval>
+      <endname>co_end</endname>
+      <errorlim>15</errorlim>
+    </impliciteq>
+  </equations>
   
   <definitions>
     <block>
@@ -54,15 +66,22 @@
         <val>ideal_cardiac_output * plateau_multiplier</val>
       </def>
       
-      <def>
-        <name>starling_curve</name>
-        <val>plateau * ( ( heart.right_atrial_pressure + 4 ) ^ 7.8 ) / ( ( heart.right_atrial_pressure + 4 ) ^ 7.8 + ( setpoint ^ 7.8 )  )</val>
-      </def>
-      
-      <def>
+      <implicitmath>
         <name>cardiac_output</name>
-        <val>starling_curve</val>
-      </def>
+
+        <def>
+          <name>right_atrial_pressure</name>
+          <val>heart.mean_circulatory_filling_pressure - ( cardiac_output * heart.resistance_to_venous_return )</val>
+        </def>
+        
+        <def>
+          <name>co_end</name>
+          <val>plateau * ( ( heart.right_atrial_pressure + 4 ) ^ 7.8 ) / ( ( ( right_atrial_pressure + 4 ) ^ 7.8 ) + ( setpoint ^ 7.8 )  )</val>
+        </def>
+
+      </implicitmath>
+      
+      
     </block>
   </definitions>
 </structure>

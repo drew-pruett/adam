@@ -58,17 +58,6 @@
     </var>
 
   </variables>
-  
-  <equations>
-    <impliciteq>
-      <!-- Need to look at flipping this around to work on RAP instead. -->
-      <name>right_atrial_pressure</name>
-      <startname>right_arterial_pressure</startname>
-      <initialval>0</initialval>
-      <endname>RAP_end</endname>
-      <errorlim>0.1</errorlim>
-    </impliciteq>
-  </equations>
 
   <definitions>  
     <block>
@@ -78,6 +67,11 @@
         <def>
           <name>cardiac_output</name>
           <val>cardiac_output.cardiac_output</val>
+        </def>
+        
+        <def>
+          <name>right_atrial_pressure</name>
+          <val>cardiac_output.right_atrial_pressure</val>
         </def>
         
         <def>
@@ -100,20 +94,11 @@
           <val>basic_heart_strength * baroreceptor_reflex.sympathetics</val>
         </def>
         
-        <implicitmath>
-          <name>right_arterial_pressure</name>
+        <def>
+          <name>resistance_to_venous_return</name>
+          <val>0.4667 * autoregulation.total_peripheral_resistance - ( 0.000232 * growth.age_months ) + 0.003168</val>
+        </def>
 
-          <def>
-            <name>resistance_to_venous_return</name>
-            <val>0.4667 * autoregulation.total_peripheral_resistance - ( 0.000232 * growth.age_months ) + 0.003168</val>
-          </def>
-          
-          <def>
-            <name>RAP_end</name>
-            <val>mean_circulatory_filling_pressure - ( cardiac_output * resistance_to_venous_return )</val>
-          </def>
-
-        </implicitmath>
     </block>
     </definitions>
   
