@@ -39,6 +39,14 @@
     </var>
     
     <var>
+      <name>dry_weight</name>
+    </var>
+    
+    <var>
+      <name>dry_weight_percent</name>
+    </var>
+    
+    <var>
       <name>height</name>
     </var>
     
