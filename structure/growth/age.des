@@ -1,0 +1,59 @@
+<!--
+  structure/growth/age.des
+-->
+
+<structure>
+  <name> growth </name>
+  
+  <variables>
+    <parm>
+      <name>start_days</name>
+      <!-- In days -->
+      <val> 30 </val>
+    </parm>
+    
+    <var>
+      <name>start_minutes</name>
+    </var>
+
+    <var>
+      <name>minutes</name>
+    </var>
+    
+    <var>
+      <name>days</name>
+    </var>
+    
+    <var>
+      <name>months</name>
+    </var>
+  </variables>
+
+  <definitions>  
+    
+    <block>
+      <name>dervs</name>
+      
+      <def>
+        <name>start_minutes</name>
+        <val>start_days * 1440</val>
+      </def>
+      
+        <def>
+          <name>minutes</name>
+          <val>start_minutes + System.X</val>
+        </def>
+        
+        <def>
+          <name>days</name>
+          <val>minutes / 1440</val>
+        </def>
+        
+        <def>
+          <name>months</name>
+          <val>minutes / 43200</val>
+        </def>
+    </block>
+    </definitions>
+  
+</structure>
