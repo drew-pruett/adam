@@ -55,15 +55,15 @@
       <name>dervs</name>
       <def>
         <name>basic_urine_output</name>
-        <val>excretion_rate * growth.weight / 60</val>
+        <val>excretion_rate * weight.real / 60</val>
       </def>
       
       <if>
-        <test>growth.age_months LE 3.0</test>
+        <test>age.months LE 3.0</test>
         <true>
           <def>
             <name>age_shift</name>
-            <val>-12.5 * growth.age_months + 62</val>
+            <val>-12.5 * age.months + 62</val>
           </def>
         </true>
         <false>

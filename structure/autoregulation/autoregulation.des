@@ -54,7 +54,7 @@
       
       <def>
         <name>tpr_limit</name>
-        <val>( LOG10 ( growth.age_months ) / growth.age_months ) * 0.2 + 0.06</val>
+        <val>( LOG10 ( age.months ) / age.months ) * 0.2 + 0.06</val>
       </def>
       
       <def>

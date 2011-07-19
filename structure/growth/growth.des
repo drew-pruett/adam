@@ -2,50 +2,15 @@
   structure/growth/growth.des
 -->
 
+<?path structure\growth ?>
+
+<?include age.des ?>
+<?include weight.des ?>
+
 <structure>
-  <name> growth </name>
+  <name>growth</name>
   
   <variables>
-    <parm>
-      <name>start_age_days</name>
-      <!-- In days -->
-      <val> 30 </val>
-    </parm>
-    
-    <var>
-      <name>start_age_minutes</name>
-    </var>
-
-    <var>
-      <name>age_minutes</name>
-    </var>
-    
-    <var>
-      <name>age_days</name>
-    </var>
-    
-    <var>
-      <name>age_months</name>
-    </var>
-    
-    <var>
-      <name>weight</name>
-      <val>3.6</val>
-    </var>
-    
-    <var>
-      <name>ideal_weight</name>
-      <val>3.6</val>
-    </var>
-    
-    <var>
-      <name>dry_weight</name>
-    </var>
-    
-    <var>
-      <name>dry_weight_percent</name>
-    </var>
-    
     <var>
       <name>height</name>
     </var>
@@ -63,60 +28,21 @@
     
     <block>
       <name>dervs</name>
+    
+      <call>age.dervs</call>
+      <call>weight.dervs</call>
       
       <def>
-        <name>start_age_minutes</name>
-        <val>start_age_days * 1440</val>
+        <!-- In in -->
+        <name> height </name>
+        <val> 20 + age.months </val>
       </def>
-      
-        <def>
-          <name>age_minutes</name>
-          <val>start_age_minutes + System.X</val>
-        </def>
-        
-        <def>
-          <name>age_days</name>
-          <val>age_minutes / 1440</val>
-        </def>
-        
-        <def>
-          <name>age_months</name>
-          <val>age_minutes / 43200</val>
-        </def>
-        
-        <def>
-          <!-- In kg -->
-          <name> ideal_weight </name>
-          <val> 8.31 * LOG10 ( age_months + 2.76 ) </val>
-        </def>
-        
-        <def>
-          <name>dry_weight_percent</name>
-          <val>0.26 + ( 0.07 * LOG10 ( age_months ) )</val>
-        </def>
-        
-        <def>
-          <name>dry_weight</name>
-          <val>ideal_weight * dry_weight_percent</val>
-        </def>
-        
-        <def>
-          <!-- In kg -->
-          <name> weight </name>
-          <val>dry_weight + fluids.total_body_water</val>
-        </def>
-    
-        <def>
-          <!-- In in -->
-          <name> height </name>
-          <val> 20 + age_months </val>
-        </def>
-    
-        <def>
-          <!-- In m^2 -->
-          <name> body_surface_area </name>
-          <val> ( 240 * ( weight ^ 0.53 ) * ( ( height * 2.54 ) ^ 0.4 ) ) / 10000 </val>
-        </def>
+  
+      <def>
+        <!-- In m^2 -->
+        <name> body_surface_area </name>
+        <val> ( 240 * ( weight.real ^ 0.53 ) * ( ( height * 2.54 ) ^ 0.4 ) ) / 10000 </val>
+      </def>
     </block>
     </definitions>
   

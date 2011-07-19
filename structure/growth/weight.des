@@ -8,21 +8,21 @@
   <variables>
     
     <var>
-      <name>weight</name>
+      <name>real</name>
       <val>3.6</val>
     </var>
     
     <var>
-      <name>ideal_weight</name>
+      <name>ideal</name>
       <val>3.6</val>
     </var>
     
     <var>
-      <name>dry_weight</name>
+      <name>dry</name>
     </var>
     
     <var>
-      <name>dry_weight_percent</name>
+      <name>dry_percent</name>
     </var>
   </variables>
 
@@ -33,24 +33,24 @@
         
         <def>
           <!-- In kg -->
-          <name> ideal_weight </name>
-          <val> 8.31 * LOG10 ( age_months + 2.76 ) </val>
+          <name>ideal</name>
+          <val> 8.31 * LOG10 ( age.months + 2.76 ) </val>
         </def>
         
         <def>
-          <name>dry_weight_percent</name>
-          <val>0.26 + ( 0.07 * LOG10 ( age_months ) )</val>
+          <name>dry_percent</name>
+          <val>0.26 + ( 0.07 * LOG10 ( age.months ) )</val>
         </def>
         
         <def>
-          <name>dry_weight</name>
-          <val>ideal_weight * dry_weight_percent</val>
+          <name>dry</name>
+          <val>ideal * dry_percent</val>
         </def>
         
         <def>
           <!-- In kg -->
-          <name> weight </name>
-          <val>dry_weight + fluids.total_body_water</val>
+          <name>real</name>
+          <val>dry + fluids.total_body_water</val>
         </def>
     </block>
     </definitions>

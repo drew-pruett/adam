@@ -25,7 +25,7 @@
       <leftmargin>10</leftmargin>
       
       <xaxis>
-        <name>growth.age_days</name>
+        <name>System.X</name>
         <label>Age</label>
       </xaxis>
       

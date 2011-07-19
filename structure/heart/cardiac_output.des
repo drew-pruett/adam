@@ -48,17 +48,17 @@
       <name>dervs</name>
       <def>
         <name>plateau_multiplier</name>
-        <val>1.2 * ( growth.age_months ^ 1.48 ) / ( growth.age_months ^ 1.48 + 19.3403 ) + 1</val>
+        <val>1.2 * ( age.months ^ 1.48 ) / ( age.months ^ 1.48 + 19.3403 ) + 1</val>
       </def>
       
       <def>
         <name>setpoint</name>
-        <val>2.09 * ( growth.age_months ^ 3.3 ) / ( growth.age_months ^ 3.3 + 48.889 ) + 2</val>
+        <val>2.09 * ( age.months ^ 3.3 ) / ( age.months ^ 3.3 + 48.889 ) + 2</val>
       </def>
       
       <def>
         <name>ideal_cardiac_output</name>
-        <val>200 * growth.ideal_weight</val>
+        <val>200 * weight.ideal</val>
       </def>
       
       <def>
