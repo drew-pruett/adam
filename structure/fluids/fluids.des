@@ -64,7 +64,7 @@
           <!-- 
             Multiplier is from 2.5 ounces of formula per pound of baby.
           -->
-          <val>162.65 * growth.weight / 1440</val>
+          <val>162.65 * weight.real / 1440</val>
         </def>
         
         <def>
@@ -79,13 +79,13 @@
         
         <def>
           <name>unstressed_blood_volume</name>
-          <val>56 * growth.weight</val>
+          <val>56 * weight.real</val>
         </def>
         
         <def>
           <name>distribution</name>
           <!-- ECF/ICF -->
-          <val>0.746367 - ( 0.00253 * growth.age_months )</val>
+          <val>0.746367 - ( 0.00253 * age.months )</val>
         </def>
         
         <def>
@@ -111,7 +111,7 @@
       <name>fluid_adjustment</name>
       <def>
          <name>total_body_water_adjusted</name>
-         <val>750 * growth.weight</val>
+         <val>750 * weight.real</val>
        </def>
        
        <def>
