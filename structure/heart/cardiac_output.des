@@ -1,0 +1,68 @@
+<!--
+  structure/heart/cardiac_output.des
+-->
+
+<structure>
+  <name>cardiac_output</name>
+  
+  <variables>
+    <var>
+      <name>cardiac_output</var>
+    </var>
+    
+    <var>
+      <name>plateau_multiplier</name>
+    </var>
+    
+    <var>
+      <name>ideal_cardiac_output</name>
+    </var>
+    
+    <var>
+      <name>plateau</name>
+    </var>
+    
+    <var>
+      <name>starling_curve</name>
+    </var>
+    
+    <var>
+      <name>setpoint</name>
+    </var>
+  </variables>
+  
+  <definitions>
+    <block>
+      <name>dervs</name>
+      <def>
+        <name>plateau_multiplier</name>
+        <val>1.2 * ( growth.age_months ^ 1.48 ) / ( growth.age_months ^ 1.48 + 19.3403 ) + 1</val>
+      </def>
+      
+      <def>
+        <name>setpoint</name>
+        <val>2.09 * ( growth.age_months ^ 3.3 ) / ( growth.age_months ^ 3.3 48.889 ) + 2</val>
+      </def>
+      
+      <def>
+        <name>ideal_cardiac_output</name>
+        <val>200 * growth.ideal_weight</val>
+      </def>
+      
+      <def>
+        <name>plateau</name>
+        <val>ideal_cardiac_output * plateau_multiplier</val>
+      </def>
+      
+      <def>
+        <name>starling_curve</name>
+        <val>plateau * ( ( heart.right_atrial_pressure + 4 ) ^ 7.8 ) / ( ( heart.right_atrial_pressure + 4 ) ^ 7.8 + ( setpoint ^ 7.8 )  )</val>
+      </def>
+      
+      <def>
+        <name>cardiac_output</name>
+        <val>starling_curve</val>
+      </def>
+    </block>
+  </definitions>
+</structure>

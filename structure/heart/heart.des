@@ -2,6 +2,10 @@
   structure/heart/heart.des
 -->
 
+<?path structure\heart ?>
+
+<?include cardiac_output.des ?>
+
 <structure>
   <name>heart</name>
   
@@ -71,7 +75,7 @@
       <name>dervs</name>
         <def>
           <name>cardiac_output</name>
-          <val>236 * growth.weight</val>
+          <val>cardiac_output.cardiac_output</val>
         </def>
         
         <def>

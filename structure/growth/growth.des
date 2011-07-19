@@ -34,6 +34,11 @@
     </var>
     
     <var>
+      <name>ideal_weight</name>
+      <val>3.6</val>
+    </var>
+    
+    <var>
       <name>height</name>
     </var>
     
@@ -74,6 +79,12 @@
         <def>
           <!-- In kg -->
           <name> weight </name>
+          <val> 8.31 * LOG10 ( age_months + 2.76 ) </val>
+        </def>
+        
+        <def>
+          <!-- In kg -->
+          <name> ideal_weight </name>
           <val> 8.31 * LOG10 ( age_months + 2.76 ) </val>
         </def>
     
