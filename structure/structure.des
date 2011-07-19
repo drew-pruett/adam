@@ -23,6 +23,8 @@
   
     <block>
       <name> dervs </name>
+      <call>fluids.calc</call>
+      
       <call>growth.dervs</call>
       <call>fluids.dervs</call>
       <call>baroreceptor_reflex.dervs</call>
