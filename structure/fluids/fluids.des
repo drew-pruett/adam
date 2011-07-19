@@ -38,6 +38,10 @@
     <var>
       <name>unstressed_blood_volume</name>
     </var>
+    
+    <var>
+      <name>distribution</name>
+    </var>
 
   </variables>
   
@@ -76,6 +80,22 @@
         <def>
           <name>unstressed_blood_volume</name>
           <val>56 * growth.weight</val>
+        </def>
+        
+        <def>
+          <name>distribution</name>
+          <!-- ECF/ICF -->
+          <val>0.746367 - ( 0.00253 * growth.age_months )</val>
+        </def>
+        
+        <def>
+          <name>intracellular</name>
+          <val>extracellular / distribution</val>
+        </def>
+        
+        <def>
+          <name>total_body_water</name>
+          <val>extracellular + intracellular</val>
         </def>
     </block>
     

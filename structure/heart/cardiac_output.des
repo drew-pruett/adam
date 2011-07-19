@@ -37,7 +37,7 @@
       <!-- Need to look at flipping this around to work on RAP instead. -->
       <name>cardiac_output</name>
       <startname>cardiac_output</startname>
-      <initialval>1000</initialval>
+      <initialval>700</initialval>
       <endname>co_end</endname>
       <errorlim>15</errorlim>
     </impliciteq>
