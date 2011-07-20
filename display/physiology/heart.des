@@ -8,8 +8,8 @@
   <groupbox>
     <row>2.0</row>
     <col>2.0</col>
-    <high>22</high>
-    <wide>84</wide>
+    <high>24</high>
+    <wide>86</wide>
     <title>Metrics</title>
     
     <showgraph>
