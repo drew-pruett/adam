@@ -7,25 +7,7 @@
 <?path display\tree\physiology ?>
 
 <leaf>
-  <name>growth_metrics</name>
-  <label>Growth Metrics</label>
-  <parent>physiology</parent>
-</leaf>
-
-<leaf>
   <name>heart</name>
   <label>Heart</label>
-  <parent>physiology</parent>
-</leaf>
-
-<leaf>
-  <name>fluids</name>
-  <label>Fluids</label>
-  <parent>physiology</parent>
-</leaf>
-
-<leaf>
-  <name>kidney</name>
-  <label>Kidney</label>
   <parent>physiology</parent>
 </leaf>
