@@ -24,7 +24,7 @@
         <label>Age (Months)</label>
         <scale>
           <min>1</min>
-          <max>24</max>
+          <max>6</max>
         </scale>
       </xaxis>
       
@@ -36,7 +36,7 @@
         </yvar>
         <scale>
           <min>1100</min>
-          <max>2800</max>
+          <max>1500</max>
         </scale>
       </yaxis>
     </showgraph>
@@ -53,13 +53,13 @@
         <label>Age (Months)</label>
         <scale>
           <min>1</min>
-          <max>24</max>
+          <max>6</max>
         </scale>
       </xaxis>
       
       <yaxis>
         <yvar>
-          <name>heart.mean_arterial_pressure</name>
+          <name>renal_function.mean_arterial_pressure</name>
           <label>MAP</label>
           <linecolor>RED</linecolor>
         </yvar>
@@ -72,7 +72,7 @@
 
     <showgraph>
       <row>1</row>
-      <col>1</col>
+      <col>22</col>
       <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -82,7 +82,7 @@
         <label>Age (Months)</label>
         <scale>
           <min>1</min>
-          <max>24</max>
+          <max>6</max>
         </scale>
       </xaxis>
       
@@ -100,8 +100,8 @@
     </showgraph>
     
     <showgraph>
-      <row>1</row>
-      <col>1</col>
+      <row>12</row>
+      <col>22</col>
       <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -111,7 +111,7 @@
         <label>Age (Months)</label>
         <scale>
           <min>1</min>
-          <max>24</max>
+          <max>6</max>
         </scale>
       </xaxis>
       
@@ -123,7 +123,7 @@
         </yvar>
         <scale>
           <min>20</min>
-          <max>48</max>
+          <max>28</max>
         </scale>
       </yaxis>
     </showgraph>
