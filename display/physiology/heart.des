@@ -72,7 +72,7 @@
 
     <showgraph>
       <row>1</row>
-      <col>22</col>
+      <col>42</col>
       <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
@@ -101,7 +101,7 @@
     
     <showgraph>
       <row>12</row>
-      <col>22</col>
+      <col>42</col>
       <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>

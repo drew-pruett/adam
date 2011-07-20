@@ -11,15 +11,10 @@
     <?include tree\tree.des ?>
     <!-- <?include common.des ?> -->
   </common>
-  
-  <!-- <?include clinic\chart.des ?> -->
-  <?include physiology\growth_metrics.des ?>
   <?include physiology\heart.des ?>
-  <?include physiology\fluids.des ?>
-  <?include physiology\kidney.des ?>
   
   <common>
-    <displayfirst>kidney</displayfirst>
+    <displayfirst>heart</displayfirst>
   </common>
 </display>
   
