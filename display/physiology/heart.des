@@ -5,28 +5,27 @@
 <panel>
   <name>heart</name>
   
-  <showpanelname>
-    <row>0.5</row>
-    <col>1.0</col>
-  </showpanelname>
-  
   <groupbox>
     <row>2.0</row>
     <col>2.0</col>
-    <high>19.0</high>
-    <wide>95.0</wide>
-    <title>Heart</title>
+    <high>22</high>
+    <wide>84</wide>
+    <title>Metrics</title>
     
     <showgraph>
-      <row>8.5</row>
+      <row>1</row>
       <col>1</col>
-      <high>9</high>
+      <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
+        <name>growth.age_months</name>
+        <label>Age (Months)</label>
+        <scale>
+          <min>1</min>
+          <max>24</max>
+        </scale>
       </xaxis>
       
       <yaxis>
@@ -35,132 +34,97 @@
           <label>CO</label>
           <linecolor>RED</linecolor>
         </yvar>
+        <scale>
+          <min>1100</min>
+          <max>2800</max>
+        </scale>
       </yaxis>
     </showgraph>
     
     <showgraph>
-      <row>20</row>
+      <row>12</row>
       <col>1</col>
-      <high>9</high>
+      <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
+        <name>growth.age_months</name>
+        <label>Age (Months)</label>
+        <scale>
+          <min>1</min>
+          <max>24</max>
+        </scale>
       </xaxis>
       
       <yaxis>
         <yvar>
-          <name>heart.stroke_volume</name>
-          <label>SV</label>
+          <name>heart.mean_arterial_pressure</name>
+          <label>MAP</label>
           <linecolor>RED</linecolor>
         </yvar>
+        <scale>
+          <min>50</min>
+          <max>95</max>
+        </scale>
       </yaxis>
     </showgraph>
 
     <showgraph>
-      <row>30</row>
+      <row>1</row>
       <col>1</col>
-      <high>9</high>
+      <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
+        <name>growth.age_months</name>
+        <label>Age (Months)</label>
+        <scale>
+          <min>1</min>
+          <max>24</max>
+        </scale>
       </xaxis>
       
       <yaxis>
         <yvar>
-          <name>renal_function.mean_arterial_pressure</name>
-          <label>MAP</label>
+          <name>growth.weight</name>
+          <label>Weight</label>
           <linecolor>RED</linecolor>
         </yvar>
+        <scale>
+          <min>3</min>
+          <max>6</max>
+        </scale>
       </yaxis>
     </showgraph>
     
     <showgraph>
-      <row>10</row>
-      <col>53</col>
-      <high>9</high>
+      <row>1</row>
+      <col>1</col>
+      <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
+        <name>growth.age_months</name>
+        <label>Age (Months)</label>
+        <scale>
+          <min>1</min>
+          <max>24</max>
+        </scale>
       </xaxis>
       
       <yaxis>
         <yvar>
-          <name>heart.right_atrial_pressure</name>
-          <label>RAP</label>
+          <name>growth.height</name>
+          <label>Height</label>
           <linecolor>RED</linecolor>
         </yvar>
-      </yaxis>
-    </showgraph>
-    
-    <showgraph>
-      <row>20</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
-      <leftmargin>10</leftmargin>
-      
-      <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
-      </xaxis>
-      
-      <yaxis>
-        <yvar>
-          <name>heart.total_peripheral_resistance</name>
-          <label>TPR</label>
-          <linecolor>RED</linecolor>
-        </yvar>
-      </yaxis>
-    </showgraph>
-    
-    <showgraph>
-      <row>30</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
-      <leftmargin>10</leftmargin>
-      
-      <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
-      </xaxis>
-      
-      <yaxis>
-        <yvar>
-          <name>heart.resistance_to_venous_return</name>
-          <label>RVR</label>
-          <linecolor>RED</linecolor>
-        </yvar>
-      </yaxis>
-    </showgraph>
-    
-    <showgraph>
-      <row>40</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
-      <leftmargin>10</leftmargin>
-      
-      <xaxis>
-        <name>System.X</name>
-        <label>Age (minutes)</label>
-      </xaxis>
-      
-      <yaxis>
-        <yvar>
-          <name>heart.mean_circulatory_filling_pressure</name>
-          <label>MCFP</label>
-          <linecolor>RED</linecolor>
-        </yvar>
+        <scale>
+          <min>20</min>
+          <max>48</max>
+        </scale>
       </yaxis>
     </showgraph>
   </groupbox>
