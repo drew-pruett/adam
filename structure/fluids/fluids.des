@@ -100,14 +100,6 @@
     </block>
     
     <block>
-      <name>calc</name>
-      <def>
-        <name>total_body_water</name>
-        <val>3.5</val>
-      </def>
-    </block>
-    
-    <block>
       <name>fluid_adjustment</name>
       <def>
          <name>total_body_water_adjusted</name>
