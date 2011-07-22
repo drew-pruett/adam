@@ -50,7 +50,7 @@
         <def>
           <!-- In kg -->
           <name>real</name>
-          <val>dry + fluids.total_body_water</val>
+          <val>dry + ( fluids.total_body_water / 1000 )</val>
         </def>
     </block>
     </definitions>

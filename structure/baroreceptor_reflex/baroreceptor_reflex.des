@@ -116,7 +116,7 @@
       
       <def>
         <name>affna</name>
-        <val>affna_curve [ delp ]</val>
+        <val>affna_curve [ 0 ]</val>
       </def>
       
       <if>

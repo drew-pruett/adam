@@ -13,15 +13,15 @@
   <groupbox>
     <row>2.0</row>
     <col>2.0</col>
-    <high>19.0</high>
-    <wide>95.0</wide>
+    <high>33.0</high>
+    <wide>45.0</wide>
     <title>Fluids</title>
     
     <showgraph>
-      <row>8.5</row>
+      <row>1</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -35,14 +35,25 @@
           <label>ECFV</label>
           <linecolor>RED</linecolor>
         </yvar>
+        <yvar>
+          <name>fluids.intracellular</name>
+          <label>ICFV</label>
+          <linecolor>BLUE</linecolor>
+        </yvar>
+        <yvar>
+          <name>fluids.total_body_water</name>
+          <label>Total H2O</label>
+          <linecolor> BLACK </linecolor>
+        </yvar>
+
       </yaxis>
     </showgraph>
     
     <showgraph>
-      <row>20</row>
+      <row>11</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -56,13 +67,19 @@
           <label>BV</label>
           <linecolor>RED</linecolor>
         </yvar>
+        <yvar>
+          <name>fluids.unstressed_blood_volume</name>
+          <label>V0</label>
+          <linecolor> BLACK </linecolor>
+        </yvar>
+
       </yaxis>
     </showgraph>
     
     <showgraph>
-      <row>30</row>
+      <row>22</row>
       <col>1</col>
-      <high>9</high>
+      <high>10</high>
       <wide>42</wide>
       <leftmargin>10</leftmargin>
       
@@ -77,6 +94,12 @@
           <label>Intake</label>
           <linecolor>RED</linecolor>
         </yvar>
+       <yvar>
+          <name>renal_function.urine_output</name>
+          <label>Urine Vol</label>
+          <linecolor>GREEN</linecolor>
+        </yvar>
+
       </yaxis>
     </showgraph>
     

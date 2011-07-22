@@ -13,15 +13,15 @@
   <groupbox>
     <row>2.0</row>
     <col>2.0</col>
-    <high>19.0</high>
-    <wide>95.0</wide>
-    <title>Fluids</title>
+    <high>33.0</high>
+    <wide>45.0</wide>
+    <title>Renal function</title>
     
     <showgraph>
-      <row>8.5</row>
+      <row>1</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -39,10 +39,10 @@
     </showgraph>
 
     <showgraph>
-      <row>20</row>
+      <row>11</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -59,5 +59,26 @@
       </yaxis>
     </showgraph>
     
+ <showgraph>
+      <row>22</row>
+      <col>1</col>
+      <high>10</high>
+      <wide>40</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>renal_function.mean_arterial_pressure</name>
+        <label>MAP</label>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>renal_function.urine_output</name>
+          <label>Urine Vol</label>
+          <linecolor>BLACK</linecolor>
+        </yvar>
+      </yaxis>
+    </showgraph>
+
   </groupbox>
 </panel>

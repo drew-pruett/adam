@@ -39,7 +39,7 @@
       <startname>cardiac_output</startname>
       <initialval>700</initialval>
       <endname>co_end</endname>
-      <errorlim>15</errorlim>
+      <errorlim>.25</errorlim>
     </impliciteq>
   </equations>
   
@@ -48,12 +48,12 @@
       <name>dervs</name>
       <def>
         <name>plateau_multiplier</name>
-        <val>1.2 * ( age.months ^ 1.48 ) / ( age.months ^ 1.48 + 19.3403 ) + 1</val>
+        <val>1.2 * ( age.months ^ 1.5 ) / ( age.months ^ 1.5 + 18.49 ) + 1</val>
       </def>
       
       <def>
         <name>setpoint</name>
-        <val>2.09 * ( age.months ^ 3.3 ) / ( age.months ^ 3.3 + 48.889 ) + 2</val>
+        <val>2.09 * ( age.months ^ 3.3 ) / ( age.months ^ 3.3 + 49 ) + 2</val>
       </def>
       
       <def>
@@ -76,7 +76,7 @@
         
         <def>
           <name>co_end</name>
-          <val>plateau * ( ( heart.right_atrial_pressure + 4 ) ^ 7.8 ) / ( ( ( right_atrial_pressure + 4 ) ^ 8 ) + ( setpoint ^ 7.8 )  )</val>
+          <val>plateau * ( ( heart.right_atrial_pressure + 4 ) ^ 8 ) / ( ( ( right_atrial_pressure + 4 ) ^ 8 ) + ( setpoint ^ 8 )  )</val>
         </def>
 
       </implicitmath>

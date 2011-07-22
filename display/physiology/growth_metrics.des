@@ -13,8 +13,8 @@
   <groupbox>
     <row>2.0</row>
     <col>2.0</col>
-    <high>19.0</high>
-    <wide>95.0</wide>
+    <high>33.0</high>
+    <wide>45.0</wide>
     <title>Growth Metrics</title>
     
     <editbox>
@@ -24,10 +24,10 @@
     </editbox>
     
     <showgraph>
-      <row>8.5</row>
+      <row>1</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -53,10 +53,10 @@
     </showgraph>
     
     <showgraph>
-      <row>20</row>
+      <row>11</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -82,10 +82,10 @@
     </showgraph>
     
     <showgraph>
-      <row>30</row>
+      <row>22</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -100,7 +100,7 @@
       <yaxis>
         <yvar>
           <name>growth.body_surface_area</name>
-          <label>Body Surface Area (m^2)</label>
+          <label>BSA (m^2)</label>
           <linecolor>RED</linecolor>
         </yvar>
         <scale>
@@ -109,5 +109,7 @@
         </scale>
       </yaxis>
     </showgraph>
+
+  
   </groupbox>
 </panel>

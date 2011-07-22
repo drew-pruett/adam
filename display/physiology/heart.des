@@ -13,15 +13,15 @@
   <groupbox>
     <row>2.0</row>
     <col>2.0</col>
-    <high>19.0</high>
+    <high>44.0</high>
     <wide>95.0</wide>
     <title>Heart</title>
     
     <showgraph>
-      <row>8.5</row>
+      <row>1</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -39,10 +39,10 @@
     </showgraph>
     
     <showgraph>
-      <row>20</row>
+      <row>11</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -60,10 +60,10 @@
     </showgraph>
 
     <showgraph>
-      <row>30</row>
+      <row>22</row>
       <col>1</col>
-      <high>9</high>
-      <wide>42</wide>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -81,10 +81,10 @@
     </showgraph>
     
     <showgraph>
-      <row>10</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
+      <row>1</row>
+      <col>45</col>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -102,10 +102,10 @@
     </showgraph>
     
     <showgraph>
-      <row>20</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
+      <row>11</row>
+      <col>45</col>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -123,10 +123,10 @@
     </showgraph>
     
     <showgraph>
-      <row>30</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
+      <row>22</row>
+      <col>45</col>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>
@@ -144,10 +144,10 @@
     </showgraph>
     
     <showgraph>
-      <row>40</row>
-      <col>53</col>
-      <high>9</high>
-      <wide>42</wide>
+      <row>33</row>
+      <col>45</col>
+      <high>10</high>
+      <wide>40</wide>
       <leftmargin>10</leftmargin>
       
       <xaxis>

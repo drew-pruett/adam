@@ -43,6 +43,10 @@
       <name>distribution</name>
     </var>
 
+   <var>
+      <name> ideal_blood_volume </name>
+   </var>
+
   </variables>
   
   <equations>
@@ -97,6 +101,13 @@
           <name>unstressed_blood_volume</name>
           <val>56 * weight.real</val>
         </def>
+
+        <def>
+           <name> ideal_blood_volume </name>
+       <!--    <val> ( 1 / 3 ) * 750 * weight.real * distribution / ( 1 + distribution )</val>-->
+           <val> 80 * weight.real </val>
+        </def>
+
     </block>
     
     <block>
