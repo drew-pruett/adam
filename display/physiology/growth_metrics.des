@@ -34,8 +34,8 @@
         <name>System.X</name>
         <label>Age (minutes)</label>
         <scale>
-          <min>30</min>
-          <max>35</max>
+          <min>0</min>
+          <max>120</max>
         </scale>
       </xaxis>
       
@@ -63,7 +63,7 @@
         <name>System.X</name>
         <label>Age (minutes)</label>
         <scale>
-          <min>30</min>
+          <min>0</min>
           <max>120</max>
         </scale>
       </xaxis>
@@ -92,7 +92,7 @@
         <name>System.X</name>
         <label>Age (minutes)</label>
         <scale>
-          <min>30</min>
+          <min>0</min>
           <max>120</max>
         </scale>
       </xaxis>

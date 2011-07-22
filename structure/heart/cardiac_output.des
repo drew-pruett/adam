@@ -37,9 +37,9 @@
       <!-- Need to look at flipping this around to work on RAP instead. -->
       <name>cardiac_output</name>
       <startname>cardiac_output</startname>
-      <initialval>700</initialval>
+      <initialval>1000</initialval>
       <endname>co_end</endname>
-      <errorlim>.25</errorlim>
+      <errorlim>.01</errorlim>
     </impliciteq>
   </equations>
   
@@ -58,7 +58,7 @@
       
       <def>
         <name>ideal_cardiac_output</name>
-        <val>200 * weight.ideal</val>
+        <val>250 * weight.real</val>
       </def>
       
       <def>
@@ -74,10 +74,16 @@
           <val>heart.mean_circulatory_filling_pressure - ( cardiac_output * heart.resistance_to_venous_return )</val>
         </def>
         
-        <def>
-          <name>co_end</name>
-          <val>plateau * ( ( heart.right_atrial_pressure + 4 ) ^ 8 ) / ( ( ( right_atrial_pressure + 4 ) ^ 8 ) + ( setpoint ^ 8 )  )</val>
-        </def>
+<conditional>
+<name> co_end </name>
+<test> right_atrial_pressure GE -4 </test>
+<true>
+                  plateau * ( ( right_atrial_pressure + 4 ) ^ 8 ) / ( ( ( right_atrial_pressure + 4 ) ^ 8 ) + ( setpoint ^ 8 )  )
+        </true>
+<false>
+        0
+        </false>
+</conditional>
 
       </implicitmath>
       

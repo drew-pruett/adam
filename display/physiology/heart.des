@@ -17,6 +17,37 @@
     <wide>95.0</wide>
     <title>Heart</title>
     
+  <showvalue>
+<row> 33 </row><col> 1 </col>
+<name> cardiac_output.plateau_multiplier </name>
+<label> plat mult </label>
+</showvalue>
+
+  <showvalue>
+<row> 34 </row><col> 1 </col>
+<name> cardiac_output.plateau </name>
+<label> plat </label>
+</showvalue>
+
+  <showvalue>
+<row> 35 </row><col> 1 </col>
+<name> heart.mcfp_slope</name>
+<label> mcfp slope </label>
+</showvalue>
+
+  <showvalue>
+<row> 36 </row><col> 1 </col>
+<name> cardiac_output.ideal_cardiac_output </name>
+<label> ideal CO</label>
+</showvalue>
+
+  <showvalue>
+<row> 37 </row><col> 1 </col>
+<name> cardiac_output.setpoint</name>
+<label> set point</label>
+</showvalue>
+
+
     <showgraph>
       <row>1</row>
       <col>1</col>

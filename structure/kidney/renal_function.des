@@ -9,7 +9,7 @@
     <parm>
       <name>excretion_rate</name>
       <!-- In mL/hr -->
-      <val>1.8</val>
+      <val>6.77</val>
     </parm>
     
     <parm>
@@ -69,14 +69,14 @@
         <false>
           <def>
             <name>age_shift</name>
-            <val>36.5</val>
+            <val>34.5</val>
           </def>
         </false>
       </if>
       
       <def>
         <name>mean_arterial_pressure</name>
-        <val>heart.cardiac_output * autoregulation.total_peripheral_resistance + heart.right_atrial_pressure</val>
+        <val> 1. * heart.cardiac_output * autoregulation.total_peripheral_resistance + heart.right_atrial_pressure</val>
       </def>
       
       <def>
@@ -86,12 +86,12 @@
       
       <def>
         <name>adjusted_rpp</name>
-        <val>perfusion_pressure + age_shift</val>
+        <val>perfusion_pressure + age_shift + 0 </val>
       </def>
       
       <def>
         <name>multiplier</name>
-        <val>0.000001317 * ( adjusted_rpp ^ 3 ) - ( 0.000066 * ( adjusted_rpp ^ 2 ) ) + ( 0.003389 * adjusted_rpp ) + 0.000377</val>
+        <val> 5 ^ ( adjusted_rpp + 35 / 100 - 1 )  - .75</val>
       </def>
       
       <def>

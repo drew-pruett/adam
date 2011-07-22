@@ -81,7 +81,7 @@
         
         <def>
           <name>mcfp_slope</name>
-          <val>1 / ( 0.3 * fluids.ideal_blood_volume ) * baroreceptor_reflex.sympathetics</val>
+          <val>7 / ( 0.3 * fluids.ideal_blood_volume ) * baroreceptor_reflex.sympathetics</val>
         </def>
         
         <def>
@@ -96,7 +96,7 @@
         
         <def>
           <name>resistance_to_venous_return</name>
-          <val>0.4667 * autoregulation.total_peripheral_resistance - ( 0.000232 * age.months ) + 0.003168</val>
+          <val>0.04667 * autoregulation.total_peripheral_resistance - ( 0.000232 * age.months ) + 0.003168</val>
         </def>
 
     </block>

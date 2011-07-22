@@ -55,7 +55,7 @@
       <integralname>total_body_water</integralname>
       <initialval>3500</initialval>
       <dervname>intake_urine_difference</dervname>
-      <errorlim>15</errorlim>
+      <errorlim>1</errorlim>
     </diffeq>
   </equations>
 
@@ -68,7 +68,7 @@
           <!-- 
             Multiplier is from 2.5 ounces of formula per pound of baby.
           -->
-          <val>162.65 * weight.real / 1440</val>
+          <val>162.65 * weight.ideal / 1440</val>
         </def>
         
         <def>
@@ -99,13 +99,13 @@
         
         <def>
           <name>unstressed_blood_volume</name>
-          <val>56 * weight.real</val>
+          <val>80 * weight.ideal</val>
         </def>
 
         <def>
            <name> ideal_blood_volume </name>
        <!--    <val> ( 1 / 3 ) * 750 * weight.real * distribution / ( 1 + distribution )</val>-->
-           <val> 80 * weight.real </val>
+           <val> 115 * weight.real </val>
         </def>
 
     </block>
