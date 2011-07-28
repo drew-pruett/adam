@@ -81,12 +81,12 @@
         
         <def>
           <name>mcfp_slope</name>
-          <val>7 / ( 0.3 * fluids.ideal_blood_volume ) * baroreceptor_reflex.sympathetics</val>
+          <val>7 / ( 0.35 * fluids.ideal_blood_volume ) * baroreceptor_reflex.sympathetics</val>
         </def>
         
         <def>
           <name>mean_circulatory_filling_pressure</name>
-          <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * mcfp_slope</val>
+         <val>( fluids.blood_volume - fluids.unstressed_blood_volume ) * mcfp_slope</val>
         </def>
         
         <def>

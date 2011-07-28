@@ -41,41 +41,44 @@
     <diffeq>
       <name>basic_tpr</name>
       <integralname>basic_tpr</integralname>
-      <initialval>0.0182</initialval>
+      <initialval>0.033</initialval>.0182
       <dervname>change</dervname>
       <errorlim>0.002</errorlim>
     </diffeq>
-  </equations>
+  </equations>-->
   
   <definitions>
   
     <block>
       <name> dervs </name>
       
-      <def>
+ <!--     <def>
         <name>tpr_limit</name>
         <val>( LOG10 ( age.months ) / age.months ) * 0.2 + 0.06</val>
       </def>
       
       <def>
         <name>tpr_slope</name>
-        <val>1 / ( 12 * fluids.blood_volume )</val>
+        <val>1 / ( 12 * fluids.ideal_blood_volume )</val>
       </def>
       
       <def>
         <name>tpr_setpoint</name>
-        <val>fluids.blood_volume</val>
+        <val>fluids.ideal_blood_volume</val>
       </def>
       
       <def>
         <name>co_to_tpr</name>
-        <val>heart.cardiac_output ^ tpr_slope</val>
+        <val>cardiac_output.cardiac_output ^ tpr_slope</val>
       </def>
       
       <def>
         <name>next_tpr</name>
         <val>tpr_limit * ( co_to_tpr / ( co_to_tpr + ( tpr_setpoint ^ tpr_slope ) ) )</val>
       </def>
+-->
+
+  <def><name> next_tpr </name><val> .067 * ( cardiac_output.cardiac_output / cardiac_output.ideal_cardiac_output ) - .03 </val></def>
       
       <def>
         <name>change</name>

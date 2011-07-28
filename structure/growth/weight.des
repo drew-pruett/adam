@@ -34,12 +34,12 @@
         <def>
           <!-- In kg -->
           <name>ideal</name>
-          <val> 8.31 * LOG10 ( age.months + 2.76 ) </val>
+          <val> 8.21 * LOG10 ( age.months + 2.75 ) </val>
         </def>
         
         <def>
           <name>dry_percent</name>
-          <val>0.26 + ( 0.07 * LOG10 ( age.months ) )</val>
+          <val>0.28 + ( 0.05 * LOG10 ( age.months ) )</val>
         </def>
         
         <def>

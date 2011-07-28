@@ -45,6 +45,18 @@
           <label>Weight (kg)</label>
           <linecolor>RED</linecolor>
         </yvar>
+       <yvar>
+          <name>weight.dry</name>
+          <label>Dry Weight (kg)</label>
+          <linecolor> BLUE</linecolor>
+        </yvar>
+      <yvar>
+          <name>weight.ideal</name>
+          <label>Ideal Weight (kg)</label>
+          <linecolor> BLACK</linecolor>
+        </yvar>
+
+  
         <scale>
           <min>4.5</min>
           <max>6.5</max>

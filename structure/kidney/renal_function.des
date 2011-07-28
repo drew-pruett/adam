@@ -9,7 +9,7 @@
     <parm>
       <name>excretion_rate</name>
       <!-- In mL/hr -->
-      <val>6.77</val>
+      <val>4.77</val>
     </parm>
     
     <parm>
@@ -58,21 +58,26 @@
         <val>excretion_rate * weight.real / 60</val>
       </def>
       
-      <if>
-        <test>age.months LE 3.0</test>
-        <true>
+     <testcase>
+      <case>  
+      <test>age.months LE 3.0</test>
+           <def>
+            <name>age_shift</name>
+            <val>-11.5 * age.months + 62</val>
+          </def>
+        </case>
+        <case>
+             <test> age.months LE 12.0</test>
+            <def><name> age_shift </name><val> 30.5 - age.months </val></def>
+       </case>
+<case><test> TRUE </test>
+        
           <def>
             <name>age_shift</name>
-            <val>-12.5 * age.months + 62</val>
+            <val>18.5</val>
           </def>
-        </true>
-        <false>
-          <def>
-            <name>age_shift</name>
-            <val>34.5</val>
-          </def>
-        </false>
-      </if>
+        </case>
+      </testcase>
       
       <def>
         <name>mean_arterial_pressure</name>
@@ -91,7 +96,7 @@
       
       <def>
         <name>multiplier</name>
-        <val> 5 ^ ( adjusted_rpp + 35 / 100 - 1 )  - .75</val>
+        <val> 5 ^ ( ( ( adjusted_rpp + 30 ) / 100 ) - 1 )  - .75</val>
       </def>
       
       <def>

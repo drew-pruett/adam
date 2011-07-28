@@ -16,7 +16,20 @@
     <high>33.0</high>
     <wide>45.0</wide>
     <title>Fluids</title>
-    
+ 
+
+  <showvalue>
+     <row> 1 </row><col> 51 </col>
+     <name> fluids.Quot </name>
+     <label> quot </label>
+  </showvalue>
+
+<editbox>
+   <row> 2 </row><col> 53 </col>
+   <name> fluids.bolus </name>
+  <label> bolus </label>
+  </editbox>
+   
     <showgraph>
       <row>1</row>
       <col>1</col>
@@ -71,6 +84,11 @@
           <name>fluids.unstressed_blood_volume</name>
           <label>V0</label>
           <linecolor> BLACK </linecolor>
+        </yvar>
+      <yvar>
+          <name>fluids.ideal_blood_volume</name>
+          <label>iBV</label>
+          <linecolor> BLUE </linecolor>
         </yvar>
 
       </yaxis>

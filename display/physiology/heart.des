@@ -47,6 +47,24 @@
 <label> set point</label>
 </showvalue>
 
+  <showvalue>
+<row> 38 </row><col> 1 </col>
+<name> baroreceptor_reflex.cpad</name>
+<label>cpad </label>
+</showvalue>
+
+  <showvalue>
+<row> 39 </row><col> 1 </col>
+<name> baroreceptor_reflex.affna</name>
+<label> AffNa </label>
+</showvalue>
+
+  <showvalue>
+<row> 40 </row><col> 1 </col>
+<name> baroreceptor_reflex.sympathetics</name>
+<label> SNA </label>
+</showvalue>
+
 
     <showgraph>
       <row>1</row>
@@ -62,10 +80,16 @@
       
       <yaxis>
         <yvar>
-          <name>heart.cardiac_output</name>
+          <name>cardiac_output.cardiac_output</name>
           <label>CO</label>
           <linecolor>RED</linecolor>
         </yvar>
+       <yvar>
+          <name>cardiac_output.ideal_cardiac_output</name>
+          <label>idCO</label>
+          <linecolor>GREEN</linecolor>
+        </yvar>
+
       </yaxis>
     </showgraph>
     
@@ -146,10 +170,14 @@
       
       <yaxis>
         <yvar>
-          <name>heart.total_peripheral_resistance</name>
+          <name>autoregulation.total_peripheral_resistance</name>
           <label>TPR</label>
           <linecolor>RED</linecolor>
         </yvar>
+     <scale>
+    <min> 0 </min>
+    <max> .01 </max>
+      </scale>
       </yaxis>
     </showgraph>
     

@@ -48,7 +48,7 @@
     <diffeq>
       <name>cpad</name>
       <integralname>cpad</integralname>
-      <initialval>100.0</initialval>
+      <initialval>40.0</initialval>
       <dervname>change</dervname>
       <errorlim>1.0</errorlim>
     </diffeq>
@@ -116,7 +116,7 @@
       
       <def>
         <name>affna</name>
-        <val>affna_curve [ 0 ]</val>
+        <val>affna_curve [ delp ]</val>
       </def>
       
       <if>

@@ -80,5 +80,47 @@
       </yaxis>
     </showgraph>
 
+ <showgraph>
+      <row>22</row>
+      <col>51</col>
+      <high>10</high>
+      <wide>40</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>renal_function.mean_arterial_pressure</name>
+        <label>MAP</label>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>renal_function.multiplier</name>
+          <label>Urine mult</label>
+          <linecolor>BLACK</linecolor>
+        </yvar>
+      </yaxis>
+    </showgraph>
+
+ <showgraph>
+      <row>1</row>
+      <col>51</col>
+      <high>10</high>
+      <wide>40</wide>
+      <leftmargin>10</leftmargin>
+      
+      <xaxis>
+        <name>System.X</name>
+        <label>MAP</label>
+      </xaxis>
+      
+      <yaxis>
+        <yvar>
+          <name>fluids.intake_urine_difference </name>
+          <label>fluid imbalance</label>
+          <linecolor>BLACK</linecolor>
+        </yvar>
+      </yaxis>
+    </showgraph>
+
   </groupbox>
 </panel>

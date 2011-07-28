@@ -19,6 +19,7 @@
     <block>
       <name> parms </name>
       <!-- <call>growth.parms</call> -->
+    <call> fluids.Parms </call>
     </block>
   
     <block>
@@ -28,7 +29,7 @@
       <call>baroreceptor_reflex.dervs</call>
       <call>heart.dervs</call>
       <call>kidney.dervs</call>
-      <call>autoregulation.dervs</call>
+     <call>autoregulation.dervs</call>
     </block>
   
     <block>

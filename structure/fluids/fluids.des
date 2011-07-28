@@ -6,7 +6,8 @@
   <name>fluids</name>
   
   <variables>
-    
+    <parm><name> bolus </name><val> 0.0 </val></parm>
+
     <var>
       <name>intake</name>
     </var>
@@ -47,6 +48,12 @@
       <name> ideal_blood_volume </name>
    </var>
 
+   <var>
+      <name> Quot </name>
+   </var>
+
+ 
+
   </variables>
   
   <equations>
@@ -60,6 +67,11 @@
   </equations>
 
   <definitions>  
+    <block><name> Parms </name>
+     <def><name> total_body_water </name><val> total_body_water + bolus </val></def>
+  </block>
+
+   
     <block>
       <name>dervs</name>
       
@@ -99,14 +111,16 @@
         
         <def>
           <name>unstressed_blood_volume</name>
-          <val>80 * weight.ideal</val>
+          <val>80 * weight.ideal </val>
         </def>
 
         <def>
            <name> ideal_blood_volume </name>
        <!--    <val> ( 1 / 3 ) * 750 * weight.real * distribution / ( 1 + distribution )</val>-->
-           <val> 115 * weight.real </val>
+           <val> 115 * weight.ideal </val>
         </def>
+
+   <def><name> Quot </name><val> blood_volume / ideal_blood_volume </val></def>
 
     </block>
     

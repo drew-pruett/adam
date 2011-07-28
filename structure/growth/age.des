@@ -9,7 +9,7 @@
     <parm>
       <name>start_days</name>
       <!-- In days -->
-      <val> 30 </val>
+      <val> 23 </val>
     </parm>
     
     <var>
@@ -41,7 +41,7 @@
       
         <def>
           <name>minutes</name>
-          <val>start_minutes + System.X</val>
+          <val>start_minutes + System.X </val>
         </def>
         
         <def>
